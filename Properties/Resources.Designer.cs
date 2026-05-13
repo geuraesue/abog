@@ -83,6 +83,16 @@ namespace abog.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap autoPic1 {
+            get {
+                object obj = ResourceManager.GetObject("autoPic1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap autoWew {
             get {
                 object obj = ResourceManager.GetObject("autoWew", resourceCulture);
@@ -106,6 +116,16 @@ namespace abog.Properties {
         internal static System.Drawing.Bitmap basicPic1 {
             get {
                 object obj = ResourceManager.GetObject("basicPic1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap basicPic2 {
+            get {
+                object obj = ResourceManager.GetObject("basicPic2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +203,16 @@ namespace abog.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap deepClean1 {
+            get {
+                object obj = ResourceManager.GetObject("deepClean1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap deepWew {
             get {
                 object obj = ResourceManager.GetObject("deepWew", resourceCulture);
@@ -216,6 +246,16 @@ namespace abog.Properties {
         internal static System.Drawing.Bitmap standardPic {
             get {
                 object obj = ResourceManager.GetObject("standardPic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap standardPic1 {
+            get {
+                object obj = ResourceManager.GetObject("standardPic1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

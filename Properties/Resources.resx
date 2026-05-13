@@ -127,6 +127,9 @@
   <data name="d9c3a45d-0958-4e44-bf30-c2b2dffd7ab4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\d9c3a45d-0958-4e44-bf30-c2b2dffd7ab4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="deepClean1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deepClean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="standardPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\standardPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,6 +154,9 @@
   <data name="wew" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\wew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Black and Green Atmospheric Forest Path Desktop Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Black and Green Atmospheric Forest Path Desktop Wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="basicPic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basicPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,10 +175,16 @@
   <data name="standardWew" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\standardWew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="basicPic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basicPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standardPic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\standardPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="basicPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basicPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Black and Green Atmospheric Forest Path Desktop Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Black and Green Atmospheric Forest Path Desktop Wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="autoPic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\autoPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
