@@ -37,19 +37,16 @@
             label3 = new Label();
             pictureBox2 = new PictureBox();
             panel3 = new Panel();
-            btnStandardClean = new Button();
             label12 = new Label();
             label9 = new Label();
             label6 = new Label();
             pictureBox3 = new PictureBox();
             panel4 = new Panel();
-            btnDeepClean = new Button();
             label13 = new Label();
             label10 = new Label();
             label7 = new Label();
             pictureBox4 = new PictureBox();
             panel5 = new Panel();
-            btnAutoDetail = new Button();
             label14 = new Label();
             label11 = new Label();
             label8 = new Label();
@@ -57,6 +54,9 @@
             btnLogin = new Button();
             pictureBox1 = new PictureBox();
             btnSignup = new Button();
+            btnStandardClean = new Button();
+            btnDeepClean = new Button();
+            btnAutoDetail = new Button();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
@@ -111,15 +111,15 @@
             // 
             // btnBasicClean
             // 
-            btnBasicClean.BackColor = Color.FromArgb(155, 167, 123);
+            btnBasicClean.BackColor = Color.FromArgb(90, 118, 132);
             btnBasicClean.FlatStyle = FlatStyle.Flat;
-            btnBasicClean.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnBasicClean.ForeColor = Color.Transparent;
-            btnBasicClean.Location = new Point(64, 335);
+            btnBasicClean.Font = new Font("Segoe UI", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBasicClean.ForeColor = Color.FromArgb(155, 167, 123);
+            btnBasicClean.Location = new Point(64, 330);
             btnBasicClean.Name = "btnBasicClean";
-            btnBasicClean.Size = new Size(112, 34);
+            btnBasicClean.Size = new Size(110, 27);
             btnBasicClean.TabIndex = 8;
-            btnBasicClean.Text = "Book now";
+            btnBasicClean.Text = "View More";
             btnBasicClean.UseVisualStyleBackColor = false;
             // 
             // label5
@@ -178,19 +178,6 @@
             panel3.Size = new Size(249, 386);
             panel3.TabIndex = 7;
             // 
-            // btnStandardClean
-            // 
-            btnStandardClean.BackColor = Color.FromArgb(155, 167, 123);
-            btnStandardClean.FlatStyle = FlatStyle.Flat;
-            btnStandardClean.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnStandardClean.ForeColor = Color.Transparent;
-            btnStandardClean.Location = new Point(71, 335);
-            btnStandardClean.Name = "btnStandardClean";
-            btnStandardClean.Size = new Size(112, 34);
-            btnStandardClean.TabIndex = 9;
-            btnStandardClean.Text = "Book now";
-            btnStandardClean.UseVisualStyleBackColor = false;
-            // 
             // label12
             // 
             label12.AutoSize = true;
@@ -247,19 +234,6 @@
             panel4.Size = new Size(245, 386);
             panel4.TabIndex = 8;
             // 
-            // btnDeepClean
-            // 
-            btnDeepClean.BackColor = Color.FromArgb(155, 167, 123);
-            btnDeepClean.FlatStyle = FlatStyle.Flat;
-            btnDeepClean.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDeepClean.ForeColor = Color.Transparent;
-            btnDeepClean.Location = new Point(65, 335);
-            btnDeepClean.Name = "btnDeepClean";
-            btnDeepClean.Size = new Size(112, 34);
-            btnDeepClean.TabIndex = 10;
-            btnDeepClean.Text = "Book now";
-            btnDeepClean.UseVisualStyleBackColor = false;
-            // 
             // label13
             // 
             label13.AutoSize = true;
@@ -315,19 +289,6 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(240, 386);
             panel5.TabIndex = 8;
-            // 
-            // btnAutoDetail
-            // 
-            btnAutoDetail.BackColor = Color.FromArgb(155, 167, 123);
-            btnAutoDetail.FlatStyle = FlatStyle.Flat;
-            btnAutoDetail.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAutoDetail.ForeColor = Color.Transparent;
-            btnAutoDetail.Location = new Point(66, 335);
-            btnAutoDetail.Name = "btnAutoDetail";
-            btnAutoDetail.Size = new Size(112, 34);
-            btnAutoDetail.TabIndex = 11;
-            btnAutoDetail.Text = "Book now";
-            btnAutoDetail.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -412,6 +373,45 @@
             btnSignup.Text = "Sign up";
             btnSignup.UseVisualStyleBackColor = false;
             // 
+            // btnStandardClean
+            // 
+            btnStandardClean.BackColor = Color.FromArgb(90, 118, 132);
+            btnStandardClean.FlatStyle = FlatStyle.Flat;
+            btnStandardClean.Font = new Font("Segoe UI", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnStandardClean.ForeColor = Color.FromArgb(155, 167, 123);
+            btnStandardClean.Location = new Point(71, 330);
+            btnStandardClean.Name = "btnStandardClean";
+            btnStandardClean.Size = new Size(104, 27);
+            btnStandardClean.TabIndex = 10;
+            btnStandardClean.Text = "View More";
+            btnStandardClean.UseVisualStyleBackColor = false;
+            // 
+            // btnDeepClean
+            // 
+            btnDeepClean.BackColor = Color.FromArgb(90, 118, 132);
+            btnDeepClean.FlatStyle = FlatStyle.Flat;
+            btnDeepClean.Font = new Font("Segoe UI", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDeepClean.ForeColor = Color.FromArgb(155, 167, 123);
+            btnDeepClean.Location = new Point(66, 330);
+            btnDeepClean.Name = "btnDeepClean";
+            btnDeepClean.Size = new Size(103, 27);
+            btnDeepClean.TabIndex = 11;
+            btnDeepClean.Text = "View More";
+            btnDeepClean.UseVisualStyleBackColor = false;
+            // 
+            // btnAutoDetail
+            // 
+            btnAutoDetail.BackColor = Color.FromArgb(90, 118, 132);
+            btnAutoDetail.FlatStyle = FlatStyle.Flat;
+            btnAutoDetail.Font = new Font("Segoe UI", 6F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAutoDetail.ForeColor = Color.FromArgb(155, 167, 123);
+            btnAutoDetail.Location = new Point(73, 330);
+            btnAutoDetail.Name = "btnAutoDetail";
+            btnAutoDetail.Size = new Size(103, 27);
+            btnAutoDetail.TabIndex = 12;
+            btnAutoDetail.Text = "View More";
+            btnAutoDetail.UseVisualStyleBackColor = false;
+            // 
             // homePage
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -474,11 +474,11 @@
         private Label label14;
         private Label label11;
         private Label label8;
-        private Button btnStandardClean;
-        private Button btnDeepClean;
-        private Button btnAutoDetail;
         private Button btnLogin;
         private PictureBox pictureBox1;
         private Button btnSignup;
+        private Button btnStandardClean;
+        private Button btnDeepClean;
+        private Button btnAutoDetail;
     }
 }
