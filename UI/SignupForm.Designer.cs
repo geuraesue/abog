@@ -44,7 +44,9 @@
             txtPassword = new TextBox();
             txtEmail = new TextBox();
             linkLogin = new LinkLabel();
-            linkBack = new LinkLabel();
+            txtFirstName = new TextBox();
+            txtPhoneNumber = new TextBox();
+            txtLastName = new TextBox();
             panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -103,6 +105,37 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.ButtonHighlight;
+            label7.Location = new Point(94, 673);
+            label7.Name = "label7";
+            label7.Size = new Size(206, 21);
+            label7.TabIndex = 9;
+            label7.Text = "2026 abog cleaning services";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.c_nalang;
+            pictureBox5.Location = new Point(53, 673);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(35, 31);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 8;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.abogg_c_eloysa_removebg_preview;
+            pictureBox1.Location = new Point(53, 31);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(142, 58);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
@@ -128,6 +161,14 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.we_arrivee;
+            pictureBox3.Location = new Point(53, 310);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(352, 96);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 5;
+            pictureBox3.TabStop = false;
+            // 
+            pictureBox3.Image = Properties.Resources.we_arrivee;
             pictureBox3.Location = new Point(37, 186);
             pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
@@ -141,6 +182,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
+            label1.Location = new Point(510, 29);
             label1.Location = new Point(421, 100);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
@@ -195,12 +237,12 @@
             btnSignup.TabIndex = 13;
             btnSignup.Text = "Sign Up";
             btnSignup.UseVisualStyleBackColor = false;
+            btnSignup.Click += btnSignup_Click;
             // 
             // txtPassword
             // 
             txtPassword.BorderStyle = BorderStyle.FixedSingle;
-            txtPassword.Location = new Point(428, 230);
-            txtPassword.Margin = new Padding(2);
+            txtPassword.Location = new Point(611, 458);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(282, 23);
             txtPassword.TabIndex = 11;
@@ -231,8 +273,26 @@
             linkLogin.Text = "Log in";
             linkLogin.LinkClicked += linkLogin_LinkClicked;
             // 
-            // linkBack
+            // txtFirstName
             // 
+            txtFirstName.Location = new Point(600, 129);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.Size = new Size(402, 31);
+            txtFirstName.TabIndex = 20;
+            // 
+            // txtPhoneNumber
+            // 
+            txtPhoneNumber.Location = new Point(611, 542);
+            txtPhoneNumber.Name = "txtPhoneNumber";
+            txtPhoneNumber.Size = new Size(402, 31);
+            txtPhoneNumber.TabIndex = 21;
+            // 
+            // txtLastName
+            // 
+            txtLastName.Location = new Point(600, 177);
+            txtLastName.Name = "txtLastName";
+            txtLastName.Size = new Size(402, 31);
+            txtLastName.TabIndex = 22;
             linkBack.AutoSize = true;
             linkBack.BackColor = Color.Transparent;
             linkBack.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -253,6 +313,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.d9c3a45d_0958_4e44_bf30_c2b2dffd7ab4;
             BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1143, 750);
+            Controls.Add(txtLastName);
+            Controls.Add(txtPhoneNumber);
+            Controls.Add(txtFirstName);
             ClientSize = new Size(800, 450);
             Controls.Add(linkBack);
             Controls.Add(linkLogin);
@@ -297,6 +361,8 @@
         private TextBox txtEmail;
         private PictureBox pictureBox5;
         private LinkLabel linkLogin;
-        private LinkLabel linkBack;
+        private TextBox txtFirstName;
+        private TextBox txtPhoneNumber;
+        private TextBox txtLastName;
     }
 }

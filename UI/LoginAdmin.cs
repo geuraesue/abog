@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using abog.Service;
+
 
 namespace abog.UI
 {
@@ -25,6 +18,24 @@ namespace abog.UI
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+            string email = txtUsername.Text;
+            string password = txtPassword.Text;
+
+            Authentication auth = new Authentication();
+            var admin = auth.aLogin(email, password);
+
+            if (admin == null)
+            {
+                MessageBox.Show("Invalid...");
+                return;
+            }
+
+            MessageBox.Show($"Welcome {admin.firstName}");
+            this.Hide();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
