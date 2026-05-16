@@ -286,6 +286,7 @@
             Controls.Add(txtUsername);
             Controls.Add(panelLeft);
             Name = "LoginAdmin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginAdmin";
             panelLeft.ResumeLayout(false);
             panelLeft.PerformLayout();
