@@ -219,6 +219,7 @@
             lblName.Size = new Size(57, 24);
             lblName.TabIndex = 38;
             lblName.Text = "Name";
+            lblName.Click += lblName_Click;
             // 
             // lblInstruction
             // 

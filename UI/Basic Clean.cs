@@ -40,6 +40,7 @@ namespace abog
         private void basicClean_Load(object sender, EventArgs e)
         {
             RoundButton(btnBasClean);
+            panel1.SendToBack();
         }
     }
 }
