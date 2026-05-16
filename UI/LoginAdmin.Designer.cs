@@ -177,6 +177,7 @@
             btnLogin.TabIndex = 13;
             btnLogin.Text = "Sign in as admin";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click_1;
             // 
             // txtPassword
             // 

@@ -221,6 +221,7 @@
             linkSignUp.TabIndex = 10;
             linkSignUp.TabStop = true;
             linkSignUp.Text = "Sign up";
+            linkSignUp.LinkClicked += linkSignUp_LinkClicked;
             // 
             // btnAdmin
             // 
@@ -232,6 +233,7 @@
             btnAdmin.Size = new Size(54, 49);
             btnAdmin.TabIndex = 11;
             btnAdmin.UseVisualStyleBackColor = false;
+            btnAdmin.Click += btnAdmin_Click;
             // 
             // linkBack
             // 
