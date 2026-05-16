@@ -6,6 +6,7 @@ namespace abog.Service
     public class Authentication
     {
         private readonly UserAccess uAccess = new UserAccess();
+        private readonly AdminAccess aAccess = new AdminAccess();
 
         public Users Login(String emailAddress, String password)
         {
@@ -22,6 +23,24 @@ namespace abog.Service
             }
 
             return user;
+        }
+
+
+        public Admin aLogin(String emailAddress, String password)
+        {
+            Admin admin = aAccess.FindAdminbyEmail(emailAddress);
+
+            if (admin == null)
+            {
+                return null;
+            }
+
+            if (admin.password != password)
+            {
+                return null;
+            }
+
+            return admin;
         }
     }
 }
