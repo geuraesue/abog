@@ -118,50 +118,95 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bookbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bookbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="taotao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taotao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="autoPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\autoPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="d9c3a45d-0958-4e44-bf30-c2b2dffd7ab4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\d9c3a45d-0958-4e44-bf30-c2b2dffd7ab4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="deepClean1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deepClean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="standardPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\standardPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="signup" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\signup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="autoWew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\autoWew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Black and Green Atmospheric Forest Path Desktop Wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Black and Green Atmospheric Forest Path Desktop Wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="deepWew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deepWew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="deepClean" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deepClean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Black and Green Atmospheric Forest Path Desktop Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Black and Green Atmospheric Forest Path Desktop Wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="basicPic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="autoWew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\autoWew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="autoPic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\autoPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bookbutton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bookbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="we arrivee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\we arrivee.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="we cleann" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\we cleann.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="signup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\signup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancelledddd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancelledddd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basicPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basicPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c nalang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c nalang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standardWew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\standardWew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\beng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d9c3a45d-0958-4e44-bf30-c2b2dffd7ab4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d9c3a45d-0958-4e44-bf30-c2b2dffd7ab4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bookbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bookbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="completedddd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\completedddd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pendinggg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pendinggg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Black and Green Atmospheric Forest Path Desktop Wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Black and Green Atmospheric Forest Path Desktop Wallpaper.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standardPic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\standardPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="standardPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\standardPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deepWew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deepWew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basicPic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\basicPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="abogg_c_eloysa-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abogg_c_eloysa-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basicPic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basicPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="choice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\choice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,22 +214,13 @@
   <data name="abog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\abog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bookbutton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bookbutton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="you relax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\you relax.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="standardWew" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\standardWew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="total bookingsss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\total bookingsss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="basicPic2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\basicPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="standardPic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\standardPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="basicPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\basicPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="autoPic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\autoPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="taotao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\taotao1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
