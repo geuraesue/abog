@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace abog
 {
-    public partial class Form3 : Form
+    public partial class standardClean : Form
     {
-        public Form3()
+        public standardClean()
         {
             InitializeComponent();
         }

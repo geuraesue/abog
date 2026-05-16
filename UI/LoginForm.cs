@@ -47,18 +47,19 @@ namespace abog.UI
 
         }
 
-        private void btnAdmin_Click(object sender, EventArgs e)
+        private void linkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            LoginAdmin lAdmin = new LoginAdmin();
-            lAdmin.Show();
-            this.Hide();
+            Main_Form.LoadForm(new homePage());
         }
 
         private void linkSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            SignupForm sForm = new SignupForm();
-            sForm.Show();
-            this.Hide(); 
+            Main_Form.LoadForm(new SignupForm());
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new LoginAdmin());
         }
     }
 }

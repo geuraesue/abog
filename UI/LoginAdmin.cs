@@ -37,5 +37,10 @@ namespace abog.UI
             MessageBox.Show($"Welcome {admin.firstName}");
             this.Hide();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new LoginForm());
+        }
     }
 }
