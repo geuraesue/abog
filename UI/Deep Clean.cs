@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace abog
 {
-    public partial class Form4 : Form
+    public partial class deepClean : Form
     {
-        public Form4()
+        public deepClean()
         {
             InitializeComponent();
         }

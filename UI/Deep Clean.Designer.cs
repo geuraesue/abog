@@ -1,6 +1,6 @@
 ﻿namespace abog
 {
-    partial class Form4
+    partial class deepClean
     {
         /// <summary>
         /// Required designer variable.
@@ -44,10 +44,9 @@
             // 
             pictureBox1.BackgroundImage = Properties.Resources.white;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(40, 47);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(28, 28);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1063, 658);
+            pictureBox1.Size = new Size(744, 395);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -57,10 +56,9 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Segoe UI Variable Small", 20.25F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
-            label1.Location = new Point(629, 102);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(440, 61);
             label1.Name = "label1";
-            label1.Size = new Size(265, 54);
+            label1.Size = new Size(176, 36);
             label1.TabIndex = 4;
             label1.Text = "DEEP CLEAN";
             // 
@@ -70,10 +68,9 @@
             label2.BackColor = Color.White;
             label2.Font = new Font("Segoe UI Emoji", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(148, 163, 124);
-            label2.Location = new Point(471, 156);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(330, 94);
             label2.Name = "label2";
-            label2.Size = new Size(574, 27);
+            label2.Size = new Size(403, 17);
             label2.TabIndex = 7;
             label2.Text = "Heavy-duty cleaning for large and post-renovation spaces";
             // 
@@ -81,10 +78,9 @@
             // 
             pictureBox2.BackgroundImage = Properties.Resources.deepClean;
             pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(96, 115);
-            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            pictureBox2.Location = new Point(67, 69);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(331, 437);
+            pictureBox2.Size = new Size(232, 262);
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
             // 
@@ -94,10 +90,9 @@
             label3.BackColor = Color.White;
             label3.Font = new Font("Segoe UI Variable Display", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(90, 118, 132);
-            label3.Location = new Point(158, 557);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(111, 334);
             label3.Name = "label3";
-            label3.Size = new Size(215, 54);
+            label3.Size = new Size(140, 36);
             label3.TabIndex = 9;
             label3.Text = "PHP 3,199";
             // 
@@ -106,10 +101,9 @@
             pictureBox3.BackColor = Color.White;
             pictureBox3.BackgroundImage = Properties.Resources.deepWew;
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(471, 202);
-            pictureBox3.Margin = new Padding(4, 5, 4, 5);
+            pictureBox3.Location = new Point(330, 121);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(554, 423);
+            pictureBox3.Size = new Size(388, 254);
             pictureBox3.TabIndex = 11;
             pictureBox3.TabStop = false;
             // 
@@ -119,20 +113,21 @@
             btnDeepClean.FlatStyle = FlatStyle.Flat;
             btnDeepClean.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDeepClean.ForeColor = Color.White;
-            btnDeepClean.Location = new Point(215, 614);
+            btnDeepClean.Location = new Point(150, 368);
+            btnDeepClean.Margin = new Padding(2, 2, 2, 2);
             btnDeepClean.Name = "btnDeepClean";
-            btnDeepClean.Size = new Size(112, 34);
+            btnDeepClean.Size = new Size(78, 20);
             btnDeepClean.TabIndex = 15;
             btnDeepClean.Text = "Book";
             btnDeepClean.UseVisualStyleBackColor = false;
             // 
-            // Form4
+            // deepClean
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.d9c3a45d_0958_4e44_bf30_c2b2dffd7ab4;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(800, 450);
             Controls.Add(btnDeepClean);
             Controls.Add(pictureBox3);
             Controls.Add(label3);
@@ -140,8 +135,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Margin = new Padding(4, 5, 4, 5);
-            Name = "Form4";
+            Name = "deepClean";
             Text = "Deep Clean";
             Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

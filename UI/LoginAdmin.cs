@@ -26,5 +26,10 @@ namespace abog.UI
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new LoginForm());
+        }
     }
 }

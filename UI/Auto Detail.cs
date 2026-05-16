@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace abog
 {
-    public partial class AutoDetail : Form
+    public partial class autoDetail : Form
     {
-        public AutoDetail()
+        public autoDetail()
         {
             InitializeComponent();
         }

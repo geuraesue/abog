@@ -46,5 +46,20 @@ namespace abog.UI
         {
 
         }
+
+        private void linkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new homePage());
+        }
+
+        private void linkSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new SignupForm());
+        }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new LoginAdmin());
+        }
     }
 }
