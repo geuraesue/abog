@@ -293,19 +293,6 @@
             txtLastName.Name = "txtLastName";
             txtLastName.Size = new Size(402, 31);
             txtLastName.TabIndex = 22;
-            linkBack.AutoSize = true;
-            linkBack.BackColor = Color.Transparent;
-            linkBack.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkBack.LinkBehavior = LinkBehavior.NeverUnderline;
-            linkBack.LinkColor = Color.FromArgb(90, 118, 132);
-            linkBack.Location = new Point(363, 27);
-            linkBack.Margin = new Padding(2, 0, 2, 0);
-            linkBack.Name = "linkBack";
-            linkBack.Size = new Size(31, 15);
-            linkBack.TabIndex = 19;
-            linkBack.TabStop = true;
-            linkBack.Text = "<<<";
-            linkBack.LinkClicked += linkBack_LinkClicked;
             // 
             // SignupForm
             // 
@@ -318,7 +305,6 @@
             Controls.Add(txtPhoneNumber);
             Controls.Add(txtFirstName);
             ClientSize = new Size(800, 450);
-            Controls.Add(linkBack);
             Controls.Add(linkLogin);
             Controls.Add(label5);
             Controls.Add(label3);

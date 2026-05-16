@@ -35,7 +35,11 @@ namespace abog.UI
             }
 
             MessageBox.Show($"Welcome {admin.firstName}");
+            HomepageAdmin hAdmin = new HomepageAdmin();
+            hAdmin.Show();
             this.Hide();
+
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

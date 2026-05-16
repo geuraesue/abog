@@ -1,4 +1,7 @@
-﻿using abog.Service;
+﻿using abog.Models;
+using abog.Service;
+using abog.Services;
+using abog.UI;
 
 namespace abog.UI
 {
@@ -15,15 +18,26 @@ namespace abog.UI
             string password = txtPassword.Text;
 
             Authentication auth = new Authentication();
-            var user = auth.Login(email, password);
+            Users user = auth.Login(email, password);
 
-            if (user == null)
+            if (user != null)
             {
-                MessageBox.Show("Invalid...");
-                return;
+                CurrentUser.User = user;
+
+                homePage home = new homePage();
+                home.Show();
+
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid credentials.");
             }
 
-            MessageBox.Show($"Welcome {user.firstName}");
+
+            MessageBox.Show($"Welcome {user.firstName}");            
+            BookServiceForm1 book1 = new BookServiceForm1();
+            book1.Show();
             this.Hide();
         }
 

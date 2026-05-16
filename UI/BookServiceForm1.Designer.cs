@@ -147,7 +147,6 @@
             panelBasic.Name = "panelBasic";
             panelBasic.Size = new Size(503, 163);
             panelBasic.TabIndex = 8;
-            panelBasic.Paint += panel4_Paint;
             // 
             // label8
             // 
@@ -172,7 +171,6 @@
             label7.Size = new Size(82, 32);
             label7.TabIndex = 13;
             label7.Text = "₱ 699";
-            label7.Click += label7_Click;
             // 
             // label6
             // 
@@ -196,7 +194,6 @@
             panelDeep.Name = "panelDeep";
             panelDeep.Size = new Size(503, 163);
             panelDeep.TabIndex = 9;
-            panelDeep.Paint += panelDeep_Paint;
             // 
             // label16
             // 
@@ -209,7 +206,6 @@
             label16.Size = new Size(396, 24);
             label16.TabIndex = 15;
             label16.Text = "Scrubbing grout, tiles, and hard-to-reach corners";
-            label16.Click += label16_Click;
             // 
             // label13
             // 
@@ -245,7 +241,6 @@
             panelStandard.Name = "panelStandard";
             panelStandard.Size = new Size(503, 163);
             panelStandard.TabIndex = 9;
-            panelStandard.Paint += panel1_Paint;
             // 
             // label15
             // 
@@ -293,7 +288,6 @@
             panelAuto.Name = "panelAuto";
             panelAuto.Size = new Size(503, 163);
             panelAuto.TabIndex = 10;
-            panelAuto.Paint += panelAuto_Paint;
             // 
             // label17
             // 

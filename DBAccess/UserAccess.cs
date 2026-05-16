@@ -13,7 +13,7 @@ namespace abog.DBAccess
             string query = @"
                 SELECT COUNT(*) 
                 FROM Users 
-                WHERE email_address = @email OR phone_number = @phone";
+                WHERE email_address = @email OR phaone_number = @phone";
 
             using (var conn = new SqlConnection(DatabaseConfig.Connection))
             using (var cmd = new SqlCommand(query, conn))

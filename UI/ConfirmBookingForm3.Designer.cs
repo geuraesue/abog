@@ -303,7 +303,6 @@
             btnConfirm.TabIndex = 47;
             btnConfirm.Text = "Confirm";
             btnConfirm.UseVisualStyleBackColor = false;
-            btnConfirm.Click += button2_Click;
             // 
             // ConfirmBookingForm3
             // 
