@@ -82,8 +82,10 @@ namespace abog.UI
             MessageBox.Show("You selected: " + selectedService);
 
             BookServiceForm1 frm = new BookServiceForm1();
-            frm.Show();
 
+            frm.selectedService = selectedService;
+
+            frm.Show();
             this.Hide();
         }
 

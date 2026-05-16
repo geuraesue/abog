@@ -36,7 +36,6 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -48,6 +47,7 @@
             label6 = new Label();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
+            linkLabel1 = new LinkLabel();
             panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -78,7 +78,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ButtonHighlight;
-            label7.Location = new Point(53, 689);
+            label7.Location = new Point(83, 683);
             label7.Name = "label7";
             label7.Size = new Size(206, 21);
             label7.TabIndex = 5;
@@ -87,7 +87,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.c_nalang;
-            pictureBox5.Location = new Point(12, 683);
+            pictureBox5.Location = new Point(53, 683);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(35, 31);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -127,27 +127,18 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.abogg_c_eloysa_removebg_preview;
-            pictureBox1.Location = new Point(13, 2);
+            pictureBox1.Location = new Point(53, 40);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(142, 58);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(881, 322);
-            label4.Name = "label4";
-            label4.Size = new Size(134, 21);
-            label4.TabIndex = 17;
-            label4.Text = "Forgot password?";
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(587, 251);
+            label3.ForeColor = Color.FromArgb(90, 118, 132);
+            label3.Location = new Point(600, 366);
             label3.Name = "label3";
             label3.Size = new Size(87, 25);
             label3.TabIndex = 16;
@@ -156,7 +147,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(587, 167);
+            label2.ForeColor = Color.FromArgb(90, 118, 132);
+            label2.Location = new Point(600, 304);
             label2.Name = "label2";
             label2.Size = new Size(112, 25);
             label2.TabIndex = 15;
@@ -167,7 +159,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
-            label1.Location = new Point(566, 67);
+            label1.Location = new Point(591, 182);
             label1.Name = "label1";
             label1.Size = new Size(275, 48);
             label1.TabIndex = 14;
@@ -179,7 +171,7 @@
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLogin.ForeColor = SystemColors.ButtonHighlight;
-            btnLogin.Location = new Point(587, 376);
+            btnLogin.Location = new Point(600, 455);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(428, 42);
             btnLogin.TabIndex = 13;
@@ -188,14 +180,15 @@
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(587, 279);
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.Location = new Point(600, 394);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(428, 31);
             txtPassword.TabIndex = 11;
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(587, 195);
+            txtUsername.Location = new Point(600, 332);
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(428, 31);
             txtUsername.TabIndex = 10;
@@ -204,7 +197,8 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(575, 115);
+            label8.ForeColor = Color.FromArgb(90, 118, 132);
+            label8.Location = new Point(600, 230);
             label8.Name = "label8";
             label8.Size = new Size(218, 21);
             label8.TabIndex = 20;
@@ -213,8 +207,10 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(748, 441);
+            label5.ForeColor = Color.FromArgb(90, 118, 132);
+            label5.Location = new Point(747, 500);
             label5.Name = "label5";
             label5.Size = new Size(129, 21);
             label5.TabIndex = 21;
@@ -223,8 +219,10 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(659, 505);
+            label6.ForeColor = Color.FromArgb(90, 118, 132);
+            label6.Location = new Point(664, 559);
             label6.Name = "label6";
             label6.Size = new Size(305, 42);
             label6.TabIndex = 22;
@@ -234,7 +232,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(530, 29);
+            pictureBox6.Location = new Point(600, 147);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(35, 31);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -244,7 +242,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.beng;
-            pictureBox7.Location = new Point(572, 29);
+            pictureBox7.Location = new Point(642, 147);
             pictureBox7.Margin = new Padding(4);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(136, 31);
@@ -252,17 +250,33 @@
             pictureBox7.TabIndex = 24;
             pictureBox7.TabStop = false;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.ForeColor = Color.Transparent;
+            linkLabel1.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLabel1.LinkColor = Color.FromArgb(90, 118, 132);
+            linkLabel1.Location = new Point(502, 27);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(48, 25);
+            linkLabel1.TabIndex = 25;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "<<<";
+            // 
             // LoginAdmin
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.d9c3a45d_0958_4e44_bf30_c2b2dffd7ab4;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1143, 750);
+            Controls.Add(linkLabel1);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label8);
-            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -294,7 +308,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private Label label4;
         private Label label3;
         private Label label2;
         private Label label1;
@@ -306,5 +319,6 @@
         private Label label6;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
+        private LinkLabel linkLabel1;
     }
 }

@@ -35,16 +35,16 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             label7 = new Label();
-            pictureBox5 = new PictureBox();
             label1 = new Label();
-            button1 = new Button();
             label5 = new Label();
-            label4 = new Label();
             label3 = new Label();
             label2 = new Label();
             btnSignup = new Button();
             txtPassword = new TextBox();
-            txtUsername = new TextBox();
+            txtEmail = new TextBox();
+            pictureBox5 = new PictureBox();
+            linkLogin = new LinkLabel();
+            linkBack = new LinkLabel();
             panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -101,7 +101,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.abogg_c_eloysa_removebg_preview;
-            pictureBox1.Location = new Point(12, 3);
+            pictureBox1.Location = new Point(53, 31);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(142, 58);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -113,65 +113,39 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ButtonHighlight;
-            label7.Location = new Point(53, 689);
+            label7.Location = new Point(94, 673);
             label7.Name = "label7";
             label7.Size = new Size(206, 21);
             label7.TabIndex = 9;
             label7.Text = "2026 abog cleaning services";
             // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = Properties.Resources.c_nalang;
-            pictureBox5.Location = new Point(12, 683);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(35, 31);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 8;
-            pictureBox5.TabStop = false;
-            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
-            label1.Location = new Point(599, 85);
+            label1.Location = new Point(601, 167);
             label1.Name = "label1";
-            label1.Size = new Size(120, 38);
+            label1.Size = new Size(188, 60);
             label1.TabIndex = 4;
             label1.Text = "Sign Up";
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(624, 495);
-            button1.Name = "button1";
-            button1.Size = new Size(366, 42);
-            button1.TabIndex = 12;
-            button1.Text = "Log In";
-            button1.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(717, 437);
+            label5.BackColor = Color.Transparent;
+            label5.ForeColor = Color.FromArgb(90, 118, 132);
+            label5.Location = new Point(678, 512);
             label5.Name = "label5";
             label5.Size = new Size(213, 25);
             label5.TabIndex = 17;
             label5.Text = "Already have an account?";
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(834, 343);
-            label4.Name = "label4";
-            label4.Size = new Size(156, 25);
-            label4.TabIndex = 16;
-            label4.Text = "Forgot password?";
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(624, 257);
+            label3.ForeColor = Color.FromArgb(90, 118, 132);
+            label3.Location = new Point(611, 355);
             label3.Name = "label3";
             label3.Size = new Size(87, 25);
             label3.TabIndex = 15;
@@ -180,7 +154,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(624, 168);
+            label2.ForeColor = Color.FromArgb(90, 118, 132);
+            label2.Location = new Point(611, 273);
             label2.Name = "label2";
             label2.Size = new Size(54, 25);
             label2.TabIndex = 14;
@@ -189,42 +164,85 @@
             // btnSignup
             // 
             btnSignup.BackColor = Color.FromArgb(90, 118, 132);
+            btnSignup.FlatStyle = FlatStyle.Flat;
             btnSignup.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnSignup.ForeColor = SystemColors.ButtonHighlight;
-            btnSignup.Location = new Point(624, 383);
+            btnSignup.ForeColor = Color.White;
+            btnSignup.Location = new Point(611, 455);
             btnSignup.Name = "btnSignup";
-            btnSignup.Size = new Size(366, 42);
+            btnSignup.Size = new Size(402, 42);
             btnSignup.TabIndex = 13;
             btnSignup.Text = "Sign Up";
             btnSignup.UseVisualStyleBackColor = false;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(624, 294);
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.Location = new Point(611, 383);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(366, 31);
+            txtPassword.Size = new Size(402, 31);
             txtPassword.TabIndex = 11;
             // 
-            // txtUsername
+            // txtEmail
             // 
-            txtUsername.Location = new Point(624, 196);
-            txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(366, 31);
-            txtUsername.TabIndex = 10;
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.Location = new Point(611, 301);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(402, 31);
+            txtEmail.TabIndex = 10;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.c_nalang;
+            pictureBox5.Location = new Point(53, 673);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(35, 31);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 8;
+            pictureBox5.TabStop = false;
+            // 
+            // linkLogin
+            // 
+            linkLogin.AutoSize = true;
+            linkLogin.BackColor = Color.Transparent;
+            linkLogin.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLogin.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLogin.LinkColor = Color.FromArgb(90, 118, 132);
+            linkLogin.Location = new Point(886, 512);
+            linkLogin.Name = "linkLogin";
+            linkLogin.Size = new Size(64, 25);
+            linkLogin.TabIndex = 18;
+            linkLogin.TabStop = true;
+            linkLogin.Text = "Log in";
+            // 
+            // linkBack
+            // 
+            linkBack.AutoSize = true;
+            linkBack.BackColor = Color.Transparent;
+            linkBack.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkBack.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkBack.LinkColor = Color.FromArgb(90, 118, 132);
+            linkBack.Location = new Point(519, 45);
+            linkBack.Name = "linkBack";
+            linkBack.Size = new Size(51, 25);
+            linkBack.TabIndex = 19;
+            linkBack.TabStop = true;
+            linkBack.Text = "<<<";
             // 
             // SignupForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.d9c3a45d_0958_4e44_bf30_c2b2dffd7ab4;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1143, 750);
-            Controls.Add(button1);
+            Controls.Add(linkBack);
+            Controls.Add(linkLogin);
             Controls.Add(label5);
-            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(btnSignup);
             Controls.Add(txtPassword);
-            Controls.Add(txtUsername);
+            Controls.Add(txtEmail);
             Controls.Add(label1);
             Controls.Add(panelLeft);
             Name = "SignupForm";
@@ -249,16 +267,16 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox1;
         private Label label7;
-        private PictureBox pictureBox5;
         private Label label1;
         private Label label6;
-        private Button button1;
         private Label label5;
-        private Label label4;
         private Label label3;
         private Label label2;
         private Button btnSignup;
         private TextBox txtPassword;
-        private TextBox txtUsername;
+        private TextBox txtEmail;
+        private PictureBox pictureBox5;
+        private LinkLabel linkLogin;
+        private LinkLabel linkBack;
     }
 }

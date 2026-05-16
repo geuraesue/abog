@@ -77,11 +77,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI Emoji", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
             label1.Location = new Point(980, 38);
             label1.Name = "label1";
-            label1.Size = new Size(123, 24);
+            label1.Size = new Size(136, 27);
             label1.TabIndex = 2;
             label1.Text = "Book a service";
             // 
