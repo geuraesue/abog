@@ -25,9 +25,12 @@ namespace abog.UI
             if (selectedPanel != null)
             {
                 selectedPanel.BackColor = Color.White;
+                selectedPanel.BorderStyle = BorderStyle.None;
             }
 
             panel.BackColor = Color.FromArgb(90, 118, 132);
+            panel.BorderStyle = BorderStyle.FixedSingle;
+            panel.Padding = new Padding(2);
 
             selectedPanel = panel;
             selectedService = serviceName;
@@ -73,7 +76,7 @@ namespace abog.UI
 
         private void btnContinue_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(selectedService));
+            if (string.IsNullOrEmpty(selectedService))
             {
                 MessageBox.Show("Please select a service first.");
                 return;
@@ -81,8 +84,7 @@ namespace abog.UI
 
             MessageBox.Show("You selected: " + selectedService);
 
-            BookServiceForm1 frm = new BookServiceForm1();
-
+            BookingDetailForm2 frm = new BookingDetailForm2();
             frm.selectedService = selectedService;
 
             frm.Show();

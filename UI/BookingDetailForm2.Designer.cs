@@ -51,12 +51,12 @@
             btnStandard = new Button();
             btnDeep = new Button();
             btnAuto = new Button();
-            datePicker = new DateTimePicker();
-            dateTimePicker1 = new DateTimePicker();
+            dtpDate = new DateTimePicker();
+            dtpTime = new DateTimePicker();
             label8 = new Label();
             label9 = new Label();
             label11 = new Label();
-            textBox1 = new TextBox();
+            txtInstructions = new TextBox();
             btnContinue = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -315,23 +315,23 @@
             btnAuto.Text = "Auto Detail";
             btnAuto.UseVisualStyleBackColor = true;
             // 
-            // datePicker
+            // dtpDate
             // 
-            datePicker.CustomFormat = "";
-            datePicker.Location = new Point(53, 524);
-            datePicker.Name = "datePicker";
-            datePicker.Size = new Size(519, 31);
-            datePicker.TabIndex = 34;
+            dtpDate.CustomFormat = "";
+            dtpDate.Location = new Point(53, 524);
+            dtpDate.Name = "dtpDate";
+            dtpDate.Size = new Size(519, 31);
+            dtpDate.TabIndex = 34;
             // 
-            // dateTimePicker1
+            // dtpTime
             // 
-            dateTimePicker1.CustomFormat = "";
-            dateTimePicker1.Format = DateTimePickerFormat.Time;
-            dateTimePicker1.Location = new Point(578, 524);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.ShowUpDown = true;
-            dateTimePicker1.Size = new Size(519, 31);
-            dateTimePicker1.TabIndex = 35;
+            dtpTime.CustomFormat = "";
+            dtpTime.Format = DateTimePickerFormat.Time;
+            dtpTime.Location = new Point(578, 524);
+            dtpTime.Name = "dtpTime";
+            dtpTime.ShowUpDown = true;
+            dtpTime.Size = new Size(519, 31);
+            dtpTime.TabIndex = 35;
             // 
             // label8
             // 
@@ -369,15 +369,15 @@
             label11.TabIndex = 38;
             label11.Text = "Special Instruction (optional)";
             // 
-            // textBox1
+            // txtInstructions
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.ForeColor = Color.FromArgb(90, 118, 132);
-            textBox1.Location = new Point(53, 597);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(1044, 31);
-            textBox1.TabIndex = 39;
+            txtInstructions.BorderStyle = BorderStyle.FixedSingle;
+            txtInstructions.ForeColor = Color.FromArgb(90, 118, 132);
+            txtInstructions.Location = new Point(53, 597);
+            txtInstructions.Multiline = true;
+            txtInstructions.Name = "txtInstructions";
+            txtInstructions.Size = new Size(1044, 31);
+            txtInstructions.TabIndex = 39;
             // 
             // btnContinue
             // 
@@ -401,12 +401,12 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1143, 750);
             Controls.Add(btnContinue);
-            Controls.Add(textBox1);
+            Controls.Add(txtInstructions);
             Controls.Add(label11);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(datePicker);
+            Controls.Add(dtpTime);
+            Controls.Add(dtpDate);
             Controls.Add(btnAuto);
             Controls.Add(btnDeep);
             Controls.Add(btnStandard);
@@ -464,12 +464,12 @@
         private Button btnStandard;
         private Button btnDeep;
         private Button btnAuto;
-        private DateTimePicker datePicker;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpDate;
+        private DateTimePicker dtpTime;
         private Label label8;
         private Label label9;
         private Label label11;
-        private TextBox textBox1;
+        private TextBox txtInstructions;
         private Button btnContinue;
     }
 }
