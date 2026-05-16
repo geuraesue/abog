@@ -102,7 +102,7 @@ namespace abog.UI
             frm.PreferredTime = dtpTime.Value;
             frm.Instructions = txtInstructions.Text;
 
-            frm.ShowDialog();
+            Main_Form.LoadForm(frm);
         }
 
         private void btnBasic_Click(object sender, EventArgs e)
