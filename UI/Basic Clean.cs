@@ -1,4 +1,5 @@
-﻿using System;
+﻿using abog.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,17 @@ namespace abog
         private void basicClean_Load(object sender, EventArgs e)
         {
             RoundButton(btnBasClean);
+            panel1.SendToBack();
+        }
+
+        private void linkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new homePage());
+        }
+
+        private void btnBasClean_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new BookServiceForm1());
         }
     }
 }

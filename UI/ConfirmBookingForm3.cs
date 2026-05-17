@@ -38,9 +38,7 @@ namespace abog.UI
             lblService.Text = Service ?? "";
 
             lblDateTime.Text =
-                PreferredDate.ToString("MMMM dd, yyyy") +
-                " • " +
-                PreferredTime.ToString("hh:mm tt");
+                PreferredDate.ToString("MMMM dd, yyyy") + " • " + PreferredTime.ToString("hh:mm tt");
 
             lblAddress.Text = Address ?? "";
             lblEmail.Text = Email ?? "";
@@ -123,15 +121,11 @@ namespace abog.UI
                 booking.ServiceId = serviceId;   // uses validated ID
                 booking.Address = Address;
 
-                booking.StartDateTime =
-                    PreferredDate.Date + PreferredTime.TimeOfDay;
+                booking.StartDateTime = PreferredDate.Date + PreferredTime.TimeOfDay;
 
-                booking.EndDateTime =
-                    PreferredDate.Date +
-                    PreferredTime.TimeOfDay +
-                    TimeSpan.FromHours(1);
+                booking.EndDateTime = PreferredDate.Date + PreferredTime.TimeOfDay + TimeSpan.FromHours(1);
 
-                booking.Status = "pending";
+                booking.Status = "Pending";
 
                 // =========================
                 // SAVE TO DATABASE
@@ -179,6 +173,11 @@ namespace abog.UI
                 case "Auto Detail": return 4;
                 default: return 0;
             }
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

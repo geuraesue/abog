@@ -66,6 +66,30 @@ namespace abog.UI
                 return;
             }
 
+            if (txtEmail.Text == "")
+            {
+                MessageBox.Show("Please enter email.");
+                return;
+            }
+
+            if (txtFirstName.Text == "")
+            {
+                MessageBox.Show("Please enter first name.");
+                return;
+            }
+
+            if (txtLastName.Text == "")
+            {
+                MessageBox.Show("Please enter last name.");
+                return;
+            }
+
+            if (txtPhoneNum.Text == "")
+            {
+                MessageBox.Show("Please enter phone num.");
+                return;
+            }
+
             ConfirmBookingForm3 frm = new ConfirmBookingForm3();
 
             frm.FirstName = txtFirstName.Text;
@@ -78,7 +102,12 @@ namespace abog.UI
             frm.PreferredTime = dtpTime.Value;
             frm.Instructions = txtInstructions.Text;
 
-            frm.ShowDialog();
+            Main_Form.LoadForm(frm);
+        }
+
+        private void btnBasic_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

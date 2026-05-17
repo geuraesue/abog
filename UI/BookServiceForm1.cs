@@ -49,14 +49,35 @@ namespace abog.UI
         // =========================
         private void SelectService(Panel panel, string serviceName)
         {
+            // RESET PREVIOUS PANEL
             if (selectedPanel != null)
             {
                 selectedPanel.BackColor = Color.White;
                 selectedPanel.BorderStyle = BorderStyle.None;
+
+                foreach (Control c in selectedPanel.Controls)
+                {
+                    // Currency labels back to green
+                    if (c.Name.Contains("Price") || c.Text.Contains("₱"))
+                    {
+                        c.ForeColor = Color.FromArgb(155, 167, 123);
+                    }
+                    else
+                    {
+                        // Other text back to blue
+                        c.ForeColor = Color.FromArgb(90, 118, 132);
+                    }
+                }
             }
 
+            // SELECT NEW PANEL
             panel.BackColor = Color.FromArgb(90, 118, 132);
             panel.BorderStyle = BorderStyle.FixedSingle;
+
+            foreach (Control c in panel.Controls)
+            {
+                c.ForeColor = Color.White;
+            }
 
             selectedPanel = panel;
             selectedService = serviceName;
@@ -98,9 +119,9 @@ namespace abog.UI
 
             BookingDetailForm2 frm = new BookingDetailForm2();
             frm.selectedService = selectedService;
+            Main_Form.LoadForm(frm);
 
-            frm.Show();
-            this.Hide();
+
         }
 
         // =========================
@@ -119,6 +140,11 @@ namespace abog.UI
             path.CloseFigure();
 
             panel.Region = new Region(path);
+        }
+
+        private void panelBasic_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

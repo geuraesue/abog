@@ -1,4 +1,5 @@
-﻿using System;
+﻿using abog.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,7 +42,15 @@ namespace abog
         {
             RoundButton(btnAutoBook);
         }
-        
 
+        private void linkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new homePage());
+        }
+
+        private void btnAutoBook_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new BookServiceForm1());
+        }
     }
 }
