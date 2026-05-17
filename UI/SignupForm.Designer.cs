@@ -268,7 +268,6 @@
             label2.Size = new Size(94, 25);
             label2.TabIndex = 30;
             label2.Text = "First name";
-            label2.Click += this.label2_Click;
             // 
             // label3
             // 
