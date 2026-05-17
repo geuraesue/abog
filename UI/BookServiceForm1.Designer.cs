@@ -66,10 +66,9 @@
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.BackgroundImage = Properties.Resources.abog;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(28, 22);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(20, 13);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(142, 58);
+            pictureBox1.Size = new Size(99, 35);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
@@ -79,9 +78,10 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Emoji", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
-            label1.Location = new Point(980, 38);
+            label1.Location = new Point(686, 23);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(136, 27);
+            label1.Size = new Size(96, 19);
             label1.TabIndex = 2;
             label1.Text = "Book a service";
             // 
@@ -91,9 +91,10 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(90, 118, 132);
-            label2.Location = new Point(130, 109);
+            label2.Location = new Point(91, 65);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(164, 24);
+            label2.Size = new Size(115, 16);
             label2.TabIndex = 3;
             label2.Text = "1. Choose service";
             // 
@@ -103,9 +104,10 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(90, 118, 132);
-            label3.Location = new Point(499, 110);
+            label3.Location = new Point(349, 66);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(151, 24);
+            label3.Size = new Size(100, 16);
             label3.TabIndex = 4;
             label3.Text = "2. Booking details";
             // 
@@ -114,9 +116,10 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.ForeColor = Color.FromArgb(90, 118, 132);
-            label4.Location = new Point(883, 109);
+            label4.Location = new Point(618, 65);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(95, 25);
+            label4.Size = new Size(63, 15);
             label4.TabIndex = 5;
             label4.Text = "3. Confirm";
             // 
@@ -124,17 +127,19 @@
             // 
             panel2.BackColor = Color.LightGray;
             panel2.Controls.Add(panel3);
-            panel2.Location = new Point(3, 137);
+            panel2.Location = new Point(2, 82);
+            panel2.Margin = new Padding(2, 2, 2, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1145, 10);
+            panel2.Size = new Size(802, 6);
             panel2.TabIndex = 7;
             // 
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(90, 118, 132);
-            panel3.Location = new Point(86, 0);
+            panel3.Location = new Point(60, 0);
+            panel3.Margin = new Padding(2, 2, 2, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(242, 10);
+            panel3.Size = new Size(169, 6);
             panel3.TabIndex = 8;
             // 
             // panelBasic
@@ -143,11 +148,12 @@
             panelBasic.Controls.Add(label8);
             panelBasic.Controls.Add(label7);
             panelBasic.Controls.Add(label6);
-            panelBasic.Location = new Point(52, 246);
+            panelBasic.Location = new Point(36, 148);
+            panelBasic.Margin = new Padding(2, 2, 2, 2);
             panelBasic.Name = "panelBasic";
-            panelBasic.Size = new Size(503, 163);
+            panelBasic.Size = new Size(353, 99);
             panelBasic.TabIndex = 8;
-            panelBasic.Paint += panel4_Paint;
+            panelBasic.Paint += panelBasic_Paint;
             // 
             // label8
             // 
@@ -155,9 +161,10 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.FromArgb(90, 118, 132);
-            label8.Location = new Point(36, 99);
+            label8.Location = new Point(25, 59);
+            label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
-            label8.Size = new Size(224, 24);
+            label8.Size = new Size(149, 16);
             label8.TabIndex = 12;
             label8.Text = "Sweep, mop, wipe surfaces";
             // 
@@ -167,12 +174,12 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.FromArgb(155, 167, 123);
-            label7.Location = new Point(35, 67);
+            label7.Location = new Point(24, 40);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Size = new Size(82, 32);
+            label7.Size = new Size(57, 21);
             label7.TabIndex = 13;
             label7.Text = "₱ 699";
-            label7.Click += label7_Click;
             // 
             // label6
             // 
@@ -180,9 +187,10 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI Emoji", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(90, 118, 132);
-            label6.Location = new Point(25, 24);
+            label6.Location = new Point(18, 14);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(189, 43);
+            label6.Size = new Size(132, 30);
             label6.TabIndex = 12;
             label6.Text = "Basic Clean";
             // 
@@ -192,11 +200,11 @@
             panelDeep.Controls.Add(label16);
             panelDeep.Controls.Add(label13);
             panelDeep.Controls.Add(label10);
-            panelDeep.Location = new Point(52, 432);
+            panelDeep.Location = new Point(36, 259);
+            panelDeep.Margin = new Padding(2, 2, 2, 2);
             panelDeep.Name = "panelDeep";
-            panelDeep.Size = new Size(503, 163);
+            panelDeep.Size = new Size(353, 99);
             panelDeep.TabIndex = 9;
-            panelDeep.Paint += panelDeep_Paint;
             // 
             // label16
             // 
@@ -204,12 +212,12 @@
             label16.BackColor = Color.Transparent;
             label16.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label16.ForeColor = Color.FromArgb(90, 118, 132);
-            label16.Location = new Point(36, 101);
+            label16.Location = new Point(25, 61);
+            label16.Margin = new Padding(2, 0, 2, 0);
             label16.Name = "label16";
-            label16.Size = new Size(396, 24);
+            label16.Size = new Size(265, 16);
             label16.TabIndex = 15;
             label16.Text = "Scrubbing grout, tiles, and hard-to-reach corners";
-            label16.Click += label16_Click;
             // 
             // label13
             // 
@@ -217,9 +225,10 @@
             label13.BackColor = Color.Transparent;
             label13.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.FromArgb(155, 167, 123);
-            label13.Location = new Point(35, 69);
+            label13.Location = new Point(24, 41);
+            label13.Margin = new Padding(2, 0, 2, 0);
             label13.Name = "label13";
-            label13.Size = new Size(102, 32);
+            label13.Size = new Size(71, 21);
             label13.TabIndex = 14;
             label13.Text = "₱ 3,199";
             // 
@@ -229,9 +238,10 @@
             label10.BackColor = Color.Transparent;
             label10.Font = new Font("Segoe UI Emoji", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.FromArgb(90, 118, 132);
-            label10.Location = new Point(25, 26);
+            label10.Location = new Point(18, 16);
+            label10.Margin = new Padding(2, 0, 2, 0);
             label10.Name = "label10";
-            label10.Size = new Size(192, 43);
+            label10.Size = new Size(135, 30);
             label10.TabIndex = 13;
             label10.Text = "Deep Clean";
             // 
@@ -241,11 +251,11 @@
             panelStandard.Controls.Add(label15);
             panelStandard.Controls.Add(label12);
             panelStandard.Controls.Add(label9);
-            panelStandard.Location = new Point(587, 246);
+            panelStandard.Location = new Point(411, 148);
+            panelStandard.Margin = new Padding(2, 2, 2, 2);
             panelStandard.Name = "panelStandard";
-            panelStandard.Size = new Size(503, 163);
+            panelStandard.Size = new Size(353, 99);
             panelStandard.TabIndex = 9;
-            panelStandard.Paint += panel1_Paint;
             // 
             // label15
             // 
@@ -253,9 +263,10 @@
             label15.BackColor = Color.Transparent;
             label15.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label15.ForeColor = Color.FromArgb(90, 118, 132);
-            label15.Location = new Point(43, 99);
+            label15.Location = new Point(30, 59);
+            label15.Margin = new Padding(2, 0, 2, 0);
             label15.Name = "label15";
-            label15.Size = new Size(378, 24);
+            label15.Size = new Size(253, 16);
             label15.TabIndex = 14;
             label15.Text = "Dusting furniture, fixtures, and accessible areas";
             // 
@@ -265,9 +276,10 @@
             label12.BackColor = Color.Transparent;
             label12.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.FromArgb(155, 167, 123);
-            label12.Location = new Point(43, 67);
+            label12.Location = new Point(30, 40);
+            label12.Margin = new Padding(2, 0, 2, 0);
             label12.Name = "label12";
-            label12.Size = new Size(102, 32);
+            label12.Size = new Size(71, 21);
             label12.TabIndex = 14;
             label12.Text = "₱ 1,499";
             // 
@@ -277,9 +289,10 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI Emoji", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.FromArgb(90, 118, 132);
-            label9.Location = new Point(33, 24);
+            label9.Location = new Point(23, 14);
+            label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
-            label9.Size = new Size(248, 43);
+            label9.Size = new Size(174, 30);
             label9.TabIndex = 14;
             label9.Text = "Standard Clean";
             // 
@@ -289,11 +302,11 @@
             panelAuto.Controls.Add(label17);
             panelAuto.Controls.Add(label14);
             panelAuto.Controls.Add(label11);
-            panelAuto.Location = new Point(587, 432);
+            panelAuto.Location = new Point(411, 259);
+            panelAuto.Margin = new Padding(2, 2, 2, 2);
             panelAuto.Name = "panelAuto";
-            panelAuto.Size = new Size(503, 163);
+            panelAuto.Size = new Size(353, 99);
             panelAuto.TabIndex = 10;
-            panelAuto.Paint += panelAuto_Paint;
             // 
             // label17
             // 
@@ -301,9 +314,10 @@
             label17.BackColor = Color.Transparent;
             label17.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.FromArgb(90, 118, 132);
-            label17.Location = new Point(43, 101);
+            label17.Location = new Point(30, 61);
+            label17.Margin = new Padding(2, 0, 2, 0);
             label17.Name = "label17";
-            label17.Size = new Size(393, 24);
+            label17.Size = new Size(261, 16);
             label17.TabIndex = 16;
             label17.Text = "Wiping and conditioning dashboard, and panels";
             // 
@@ -313,9 +327,10 @@
             label14.BackColor = Color.Transparent;
             label14.Font = new Font("Segoe UI Emoji", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.FromArgb(155, 167, 123);
-            label14.Location = new Point(43, 69);
+            label14.Location = new Point(30, 41);
+            label14.Margin = new Padding(2, 0, 2, 0);
             label14.Name = "label14";
-            label14.Size = new Size(82, 32);
+            label14.Size = new Size(57, 21);
             label14.TabIndex = 14;
             label14.Text = "₱ 499";
             // 
@@ -325,9 +340,10 @@
             label11.BackColor = Color.Transparent;
             label11.Font = new Font("Segoe UI Emoji", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = Color.FromArgb(90, 118, 132);
-            label11.Location = new Point(33, 26);
+            label11.Location = new Point(23, 16);
+            label11.Margin = new Padding(2, 0, 2, 0);
             label11.Name = "label11";
-            label11.Size = new Size(190, 43);
+            label11.Size = new Size(131, 30);
             label11.TabIndex = 13;
             label11.Text = "Auto Detail";
             // 
@@ -337,9 +353,10 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.FromArgb(90, 118, 132);
-            label5.Location = new Point(52, 187);
+            label5.Location = new Point(36, 112);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(188, 24);
+            label5.Size = new Size(132, 16);
             label5.TabIndex = 11;
             label5.Text = "Choose your service";
             // 
@@ -349,9 +366,10 @@
             btnContinue.FlatStyle = FlatStyle.Flat;
             btnContinue.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnContinue.ForeColor = Color.White;
-            btnContinue.Location = new Point(50, 617);
+            btnContinue.Location = new Point(35, 370);
+            btnContinue.Margin = new Padding(2, 2, 2, 2);
             btnContinue.Name = "btnContinue";
-            btnContinue.Size = new Size(1040, 42);
+            btnContinue.Size = new Size(728, 25);
             btnContinue.TabIndex = 13;
             btnContinue.Text = "Continue ->";
             btnContinue.UseVisualStyleBackColor = false;
@@ -359,11 +377,11 @@
             // 
             // BookServiceForm1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.d9c3a45d_0958_4e44_bf30_c2b2dffd7ab4;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(800, 450);
             Controls.Add(btnContinue);
             Controls.Add(label5);
             Controls.Add(panelAuto);
@@ -376,6 +394,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "BookServiceForm1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Choose Service";

@@ -12,6 +12,11 @@ namespace abog.UI
             InitializeComponent();
         }
 
+        private void linkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new LoginForm());
+        }
+
         private void btnSignup_Click(object sender, EventArgs e)
         {
             try
@@ -24,7 +29,7 @@ namespace abog.UI
                 string password = txtPassword.Text.Trim();
                 string phoneNumber = txtPhoneNumber.Text.Trim();
 
-                // 🔥 DEBUG: show input values
+                //DEBUG: show input values
                 MessageBox.Show(
                     $"DEBUG INPUT:\n{firstName}\n{lastName}\n{email}\n{phoneNumber}"
                 );
@@ -32,7 +37,7 @@ namespace abog.UI
                 // basic validation
                 if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(phoneNumber))
                 {
-                    MessageBox.Show("Email and phone number are required!");
+                    MessageBox.Show("Please enter email and phone number.");
                     return;
                 }
 
@@ -46,7 +51,7 @@ namespace abog.UI
                 }
                 else
                 {
-                    MessageBox.Show("User already exists (email or phone duplicate).");
+                    MessageBox.Show("User already exists.");
                 }
             }
             catch (Exception ex)
@@ -55,11 +60,14 @@ namespace abog.UI
             }
         }
 
-        private void linkLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void SignupForm_Load(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
-            this.Hide();
+
+        }
+
+        private void linkLblBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new homePage());
         }
     }
 }

@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace abog.UI
@@ -14,66 +8,107 @@ namespace abog.UI
     public partial class BookServiceForm1 : Form
     {
         private Panel selectedPanel = null;
-        private string selectedService = "";
+        public string selectedService = "";
+
         public BookServiceForm1()
         {
             InitializeComponent();
         }
 
-        private void SelectService(Panel panel, string serviceName)
-        {
-            if (selectedPanel != null)
-            {
-                selectedPanel.BackColor = Color.White;
-                selectedPanel.BorderStyle = BorderStyle.None;
-            }
-
-            panel.BackColor = Color.FromArgb(90, 118, 132);
-            panel.BorderStyle = BorderStyle.FixedSingle;
-            panel.Padding = new Padding(2);
-
-            selectedPanel = panel;
-            selectedService = serviceName;
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // =========================
+        // FORM LOAD
+        // =========================
         private void BookServiceForm1_Load(object sender, EventArgs e)
         {
             RoundPanel(panelBasic);
             RoundPanel(panelStandard);
             RoundPanel(panelDeep);
             RoundPanel(panelAuto);
+
+            AttachClickEvents(panelBasic, panelBasic_Click);
+            AttachClickEvents(panelStandard, panelStandard_Click);
+            AttachClickEvents(panelDeep, panelDeep_Click);
+            AttachClickEvents(panelAuto, panelAuto_Click);
         }
 
-        private void panel4_Paint(object sender, PaintEventArgs e)
+        // =========================
+        // ATTACH CLICK EVENTS
+        // =========================
+        private void AttachClickEvents(Panel panel, EventHandler handler)
+        {
+            panel.Click += handler;
+
+            foreach (Control c in panel.Controls)
+            {
+                c.Click += handler;
+            }
+        }
+
+        // =========================
+        // SELECT SERVICE
+        // =========================
+        private void SelectService(Panel panel, string serviceName)
+        {
+            // RESET PREVIOUS PANEL
+            if (selectedPanel != null)
+            {
+                selectedPanel.BackColor = Color.White;
+                selectedPanel.BorderStyle = BorderStyle.None;
+
+                foreach (Control c in selectedPanel.Controls)
+                {
+                    // Currency labels back to green
+                    if (c.Name.Contains("Price") || c.Text.Contains("₱"))
+                    {
+                        c.ForeColor = Color.FromArgb(155, 167, 123);
+                    }
+                    else
+                    {
+                        // Other text back to blue
+                        c.ForeColor = Color.FromArgb(90, 118, 132);
+                    }
+                }
+            }
+
+            // SELECT NEW PANEL
+            panel.BackColor = Color.FromArgb(90, 118, 132);
+            panel.BorderStyle = BorderStyle.FixedSingle;
+
+            foreach (Control c in panel.Controls)
+            {
+                c.ForeColor = Color.White;
+            }
+
+            selectedPanel = panel;
+            selectedService = serviceName;
+        }
+
+        // =========================
+        // PANEL CLICKS
+        // =========================
+        private void panelBasic_Click(object sender, EventArgs e)
         {
             SelectService(panelBasic, "Basic Clean");
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void panelStandard_Click(object sender, EventArgs e)
         {
             SelectService(panelStandard, "Standard Clean");
         }
 
-        private void panelDeep_Paint(object sender, PaintEventArgs e)
+        private void panelDeep_Click(object sender, EventArgs e)
         {
             SelectService(panelDeep, "Deep Clean");
         }
 
-        private void panelAuto_Paint(object sender, PaintEventArgs e)
+        private void panelAuto_Click(object sender, EventArgs e)
         {
             SelectService(panelAuto, "Auto Detail");
         }
 
+        // =========================
+        // CONTINUE BUTTON
+        // =========================
         private void btnContinue_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(selectedService))
@@ -82,17 +117,18 @@ namespace abog.UI
                 return;
             }
 
-            MessageBox.Show("You selected: " + selectedService);
-
             BookingDetailForm2 frm = new BookingDetailForm2();
             frm.selectedService = selectedService;
+            Main_Form.LoadForm(frm);
 
-            frm.Show();
-            this.Hide();
+
         }
 
+        // =========================
+        // ROUND PANEL
+        // =========================
         private void RoundPanel(Panel panel)
-        { 
+        {
             GraphicsPath path = new GraphicsPath();
             int radius = 20;
 
@@ -104,6 +140,11 @@ namespace abog.UI
             path.CloseFigure();
 
             panel.Region = new Region(path);
+        }
+
+        private void panelBasic_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

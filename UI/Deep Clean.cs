@@ -1,4 +1,5 @@
-﻿using System;
+﻿using abog.UI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,9 +12,9 @@ using System.Windows.Forms;
 
 namespace abog
 {
-    public partial class Form4 : Form
+    public partial class deepClean : Form
     {
-        public Form4()
+        public deepClean()
         {
             InitializeComponent();
         }
@@ -35,6 +36,16 @@ namespace abog
         private void Form4_Load(object sender, EventArgs e)
         {
             RoundButton(btnDeepClean);
+        }
+
+        private void linkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new homePage());
+        }
+
+        private void btnDeepClean_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new BookServiceForm1());
         }
     }
 }

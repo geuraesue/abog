@@ -31,26 +31,8 @@ namespace abog
 
         }
 
-        private void login_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            LoginForm login = new LoginForm();
-            login.Show();
-        }
-
-        private void signup_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void homePage_Load(object sender, EventArgs e)
         {
-            RoundButton(btnLogin);
-            RoundButton(btnSignup);
-            RoundButton(btnBasicClean);
-            RoundButton(btnStandardClean);
-            RoundButton(btnDeepClean);
-            RoundButton(btnAutoDetail);
 
         }
 
@@ -61,8 +43,32 @@ namespace abog
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            LoginForm lForm = new LoginForm();
-            lForm.Show();
+            Main_Form.LoadForm(new LoginForm());
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new SignupForm());
+        }
+
+        private void btnBasicClean_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new basicClean());
+        }
+
+        private void btnStandardClean_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new standardClean());
+        }
+
+        private void btnDeepClean_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new deepClean());
+        }
+
+        private void btnAutoDetail_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new autoDetail());
         }
     }
 }

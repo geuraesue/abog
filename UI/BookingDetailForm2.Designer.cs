@@ -58,6 +58,7 @@
             label11 = new Label();
             txtInstructions = new TextBox();
             btnContinue = new Button();
+            btnBack = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -70,7 +71,7 @@
             pictureBox1.Location = new Point(13, 2);
             pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(142, 58);
+            pictureBox1.Size = new Size(141, 58);
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
@@ -80,7 +81,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
-            label1.Location = new Point(998, 20);
+            label1.Location = new Point(999, 20);
             label1.Name = "label1";
             label1.Size = new Size(123, 24);
             label1.TabIndex = 3;
@@ -92,7 +93,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(90, 118, 132);
-            label2.Location = new Point(112, 76);
+            label2.Location = new Point(111, 77);
             label2.Name = "label2";
             label2.Size = new Size(147, 24);
             label2.TabIndex = 4;
@@ -104,7 +105,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(90, 118, 132);
-            label3.Location = new Point(488, 76);
+            label3.Location = new Point(489, 77);
             label3.Name = "label3";
             label3.Size = new Size(169, 24);
             label3.TabIndex = 5;
@@ -127,7 +128,7 @@
             panel2.Controls.Add(panel3);
             panel2.Location = new Point(0, 103);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1145, 10);
+            panel2.Size = new Size(1146, 10);
             panel2.TabIndex = 8;
             // 
             // panel3
@@ -135,7 +136,7 @@
             panel3.BackColor = Color.FromArgb(90, 118, 132);
             panel3.Location = new Point(457, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(242, 10);
+            panel3.Size = new Size(241, 10);
             panel3.TabIndex = 8;
             // 
             // label5
@@ -144,7 +145,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI Emoji", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.FromArgb(90, 118, 132);
-            label5.Location = new Point(30, 126);
+            label5.Location = new Point(30, 127);
             label5.Name = "label5";
             label5.Size = new Size(176, 21);
             label5.TabIndex = 12;
@@ -165,7 +166,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI Emoji", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.FromArgb(90, 118, 132);
-            label6.Location = new Point(53, 169);
+            label6.Location = new Point(53, 168);
             label6.Name = "label6";
             label6.Size = new Size(86, 21);
             label6.TabIndex = 14;
@@ -175,7 +176,7 @@
             // 
             txtLastName.BorderStyle = BorderStyle.FixedSingle;
             txtLastName.ForeColor = Color.FromArgb(90, 118, 132);
-            txtLastName.Location = new Point(578, 193);
+            txtLastName.Location = new Point(579, 193);
             txtLastName.Name = "txtLastName";
             txtLastName.Size = new Size(519, 31);
             txtLastName.TabIndex = 15;
@@ -186,7 +187,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI Emoji", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.FromArgb(90, 118, 132);
-            label7.Location = new Point(578, 169);
+            label7.Location = new Point(579, 168);
             label7.Name = "label7";
             label7.Size = new Size(84, 21);
             label7.TabIndex = 16;
@@ -196,9 +197,9 @@
             // 
             txtAddress.BorderStyle = BorderStyle.FixedSingle;
             txtAddress.ForeColor = Color.FromArgb(90, 118, 132);
-            txtAddress.Location = new Point(53, 251);
+            txtAddress.Location = new Point(53, 252);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(1044, 31);
+            txtAddress.Size = new Size(1043, 31);
             txtAddress.TabIndex = 19;
             // 
             // label10
@@ -217,7 +218,7 @@
             // 
             txtEmail.BorderStyle = BorderStyle.FixedSingle;
             txtEmail.ForeColor = Color.FromArgb(90, 118, 132);
-            txtEmail.Location = new Point(53, 309);
+            txtEmail.Location = new Point(53, 308);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(519, 31);
             txtEmail.TabIndex = 22;
@@ -226,7 +227,7 @@
             // 
             txtPhoneNum.BorderStyle = BorderStyle.FixedSingle;
             txtPhoneNum.ForeColor = Color.FromArgb(90, 118, 132);
-            txtPhoneNum.Location = new Point(578, 309);
+            txtPhoneNum.Location = new Point(579, 308);
             txtPhoneNum.Name = "txtPhoneNum";
             txtPhoneNum.Size = new Size(519, 31);
             txtPhoneNum.TabIndex = 23;
@@ -249,7 +250,7 @@
             label13.BackColor = Color.Transparent;
             label13.Font = new Font("Segoe UI Emoji", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label13.ForeColor = Color.FromArgb(90, 118, 132);
-            label13.Location = new Point(578, 285);
+            label13.Location = new Point(579, 285);
             label13.Name = "label13";
             label13.Size = new Size(116, 21);
             label13.TabIndex = 25;
@@ -274,10 +275,11 @@
             btnBasic.ForeColor = Color.FromArgb(90, 118, 132);
             btnBasic.Location = new Point(156, 400);
             btnBasic.Name = "btnBasic";
-            btnBasic.Size = new Size(194, 76);
+            btnBasic.Size = new Size(194, 77);
             btnBasic.TabIndex = 30;
             btnBasic.Text = "Basic Clean";
             btnBasic.UseVisualStyleBackColor = true;
+            btnBasic.Click += btnBasic_Click;
             // 
             // btnStandard
             // 
@@ -286,7 +288,7 @@
             btnStandard.ForeColor = Color.FromArgb(90, 118, 132);
             btnStandard.Location = new Point(367, 400);
             btnStandard.Name = "btnStandard";
-            btnStandard.Size = new Size(194, 76);
+            btnStandard.Size = new Size(194, 77);
             btnStandard.TabIndex = 31;
             btnStandard.Text = "Standard Clean";
             btnStandard.UseVisualStyleBackColor = true;
@@ -296,9 +298,9 @@
             btnDeep.FlatStyle = FlatStyle.Flat;
             btnDeep.Font = new Font("Segoe UI Emoji", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDeep.ForeColor = Color.FromArgb(90, 118, 132);
-            btnDeep.Location = new Point(578, 400);
+            btnDeep.Location = new Point(579, 400);
             btnDeep.Name = "btnDeep";
-            btnDeep.Size = new Size(194, 76);
+            btnDeep.Size = new Size(194, 77);
             btnDeep.TabIndex = 32;
             btnDeep.Text = "Deep Clean";
             btnDeep.UseVisualStyleBackColor = true;
@@ -310,7 +312,7 @@
             btnAuto.ForeColor = Color.FromArgb(90, 118, 132);
             btnAuto.Location = new Point(790, 400);
             btnAuto.Name = "btnAuto";
-            btnAuto.Size = new Size(194, 76);
+            btnAuto.Size = new Size(194, 77);
             btnAuto.TabIndex = 33;
             btnAuto.Text = "Auto Detail";
             btnAuto.UseVisualStyleBackColor = true;
@@ -318,19 +320,19 @@
             // dtpDate
             // 
             dtpDate.CustomFormat = "";
-            dtpDate.Location = new Point(53, 524);
+            dtpDate.Location = new Point(53, 523);
             dtpDate.Name = "dtpDate";
-            dtpDate.Size = new Size(519, 31);
+            dtpDate.Size = new Size(518, 31);
             dtpDate.TabIndex = 34;
             // 
             // dtpTime
             // 
             dtpTime.CustomFormat = "";
             dtpTime.Format = DateTimePickerFormat.Time;
-            dtpTime.Location = new Point(578, 524);
+            dtpTime.Location = new Point(579, 523);
             dtpTime.Name = "dtpTime";
             dtpTime.ShowUpDown = true;
-            dtpTime.Size = new Size(519, 31);
+            dtpTime.Size = new Size(518, 31);
             dtpTime.TabIndex = 35;
             // 
             // label8
@@ -351,7 +353,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI Emoji", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label9.ForeColor = Color.FromArgb(90, 118, 132);
-            label9.Location = new Point(578, 500);
+            label9.Location = new Point(579, 500);
             label9.Name = "label9";
             label9.Size = new Size(112, 21);
             label9.TabIndex = 37;
@@ -376,7 +378,7 @@
             txtInstructions.Location = new Point(53, 597);
             txtInstructions.Multiline = true;
             txtInstructions.Name = "txtInstructions";
-            txtInstructions.Size = new Size(1044, 31);
+            txtInstructions.Size = new Size(1043, 30);
             txtInstructions.TabIndex = 39;
             // 
             // btnContinue
@@ -385,13 +387,26 @@
             btnContinue.FlatStyle = FlatStyle.Flat;
             btnContinue.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnContinue.ForeColor = Color.White;
-            btnContinue.Location = new Point(53, 648);
+            btnContinue.Location = new Point(578, 648);
             btnContinue.Name = "btnContinue";
-            btnContinue.Size = new Size(1044, 42);
+            btnContinue.Size = new Size(518, 40);
             btnContinue.TabIndex = 40;
             btnContinue.Text = "Continue ->";
             btnContinue.UseVisualStyleBackColor = false;
             btnContinue.Click += btnContinue_Click;
+            // 
+            // btnBack
+            // 
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBack.ForeColor = Color.FromArgb(90, 118, 132);
+            btnBack.Location = new Point(53, 648);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(519, 40);
+            btnBack.TabIndex = 47;
+            btnBack.Text = "<- Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // BookingDetailForm2
             // 
@@ -400,6 +415,7 @@
             BackgroundImage = Properties.Resources.d9c3a45d_0958_4e44_bf30_c2b2dffd7ab4;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1143, 750);
+            Controls.Add(btnBack);
             Controls.Add(btnContinue);
             Controls.Add(txtInstructions);
             Controls.Add(label11);
@@ -471,5 +487,6 @@
         private Label label11;
         private TextBox txtInstructions;
         private Button btnContinue;
+        private Button btnBack;
     }
 }

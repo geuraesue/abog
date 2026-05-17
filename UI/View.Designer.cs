@@ -63,7 +63,6 @@
             panel4.SuspendLayout();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            SuspendLayout();
             // 
             // pictureBox1
             // 
