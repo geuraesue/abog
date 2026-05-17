@@ -1,4 +1,5 @@
-﻿using abog.UI;
+﻿using abog.Models;
+using abog.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,6 +46,17 @@ namespace abog
 
         private void btnDeepClean_Click(object sender, EventArgs e)
         {
+            if (!Users.IsLoggedIn)
+            {
+                // Not logged in — show login form
+                Main_Form.LoadForm(new LoginForm());
+
+                // Check again after login form closes
+                if (!Users.IsLoggedIn)
+                    return; // they closed without logging in
+            }
+
+            // ✅ Logged in — proceed to booking
             Main_Form.LoadForm(new BookServiceForm1());
         }
     }

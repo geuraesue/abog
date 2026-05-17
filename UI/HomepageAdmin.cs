@@ -9,7 +9,7 @@ namespace abog.UI
     public partial class HomepageAdmin : Form
     {
         private BookingService bookingService = new BookingService();
-        private bool isStyled = false; // ← prevents re-styling on refresh
+        private bool isStyled = false;
 
         public HomepageAdmin()
         {
@@ -18,11 +18,12 @@ namespace abog.UI
 
         private void HomepageAdmin_Load(object sender, EventArgs e)
         {
-            StyleGrid();    // ← once only
-            LoadBookings(); // ← data
+            StyleGrid();
+            SetupColumns();
+            LoadBookings();
 
-            // ← rename columns only after data is fully bound
             dataGridView1.DataBindingComplete += dataGridView1_DataBindingComplete;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
         }
 
         // =========================
@@ -33,7 +34,82 @@ namespace abog.UI
             if (dataGridView1.Columns.Count == 0) return;
             if (dataGridView1.Rows.Count == 0) return;
 
-            RenameColumns();
+            // Keep these hidden after binding
+            if (dataGridView1.Columns["booking_id"] != null)
+                dataGridView1.Columns["booking_id"].Visible = false;
+
+            if (dataGridView1.Columns["colLastName"] != null)
+                dataGridView1.Columns["colLastName"].Visible = false;
+        }
+
+        // =========================
+        // SETUP COLUMNS
+        // =========================
+        private void SetupColumns()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.Columns.Clear();
+
+            // Hidden — used for OpenViewForm
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "booking_id",
+                DataPropertyName = "booking_id", // ✅ matches DB
+                Visible = false
+            });
+
+            // Hidden — combined with first_name
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "colLastName",
+                DataPropertyName = "last_name",  // ✅ matches DB
+                Visible = false
+            });
+
+            // Customer full name (first_name + last_name)
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "colCustomer",
+                HeaderText = "Customers",
+                DataPropertyName = "first_name", // ✅ matches DB
+                FillWeight = 22
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "colService",
+                HeaderText = "Service",
+                DataPropertyName = "service_name", // ✅ matches DB
+                FillWeight = 18
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "colDate",
+                HeaderText = "Date",
+                DataPropertyName = "start_datetime", // ✅ matches DB
+                FillWeight = 20
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "colStatus",
+                HeaderText = "Status",
+                DataPropertyName = "status", // ✅ matches DB
+                FillWeight = 15
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewLinkColumn
+            {
+                Name = "colAction",
+                HeaderText = "Action",
+                Text = "View",
+                UseColumnTextForLinkValue = true,
+                FillWeight = 10,
+                LinkColor = Color.FromArgb(90, 118, 132),
+                VisitedLinkColor = Color.FromArgb(90, 118, 132),
+                ActiveLinkColor = Color.FromArgb(60, 90, 110)
+            });
         }
 
         // =========================
@@ -69,7 +145,6 @@ namespace abog.UI
             dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 9);
             dataGridView1.RowTemplate.Height = 45;
 
-            // Wire events once
             dataGridView1.CellFormatting += dataGridView1_CellFormatting;
         }
 
@@ -97,36 +172,29 @@ namespace abog.UI
         }
 
         // =========================
-        // RENAME COLUMNS
-        // Only runs when data is present
-        // =========================
-        private void RenameColumns()
-        {
-            var renames = new System.Collections.Generic.Dictionary<string, string>
-            {
-                { "booking_id",     "Booking ID" },
-                { "user_id",        "User ID"    },
-                { "service_id",     "Service ID" },
-                { "address",        "Address"    },
-                { "start_datetime", "Start"      },
-                { "end_datetime",   "End"        },
-                { "status",         "Status"     },
-                { "created_at",     "Created At" }
-            };
-
-            foreach (var col in renames)
-                if (dataGridView1.Columns[col.Key] != null)
-                    dataGridView1.Columns[col.Key].HeaderText = col.Value;
-        }
-
-        // =========================
-        // STATUS BADGE COLORS
+        // CELL FORMATTING
         // =========================
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (e.RowIndex < 0 || e.Value == null) return;
 
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "status")
+            // =========================
+            // COMBINE FIRST + LAST NAME
+            // =========================
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "colCustomer")
+            {
+                string firstName = e.Value?.ToString();
+                string lastName = dataGridView1.Rows[e.RowIndex]
+                                    .Cells["colLastName"].Value?.ToString();
+
+                e.Value = $"{firstName} {lastName}".Trim();
+                e.FormattingApplied = true;
+            }
+
+            // =========================
+            // STATUS BADGE COLORS
+            // =========================
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "colStatus")
             {
                 switch (e.Value.ToString())
                 {
@@ -150,7 +218,18 @@ namespace abog.UI
         }
 
         // =========================
-        // VIEW BOOKING
+        // VIEW LINK CLICK
+        // =========================
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            if (dataGridView1.Columns[e.ColumnIndex].Name == "colAction")
+                OpenViewForm(e.RowIndex);
+        }
+
+        // =========================
+        // VIEW BOOKING BUTTON
         // =========================
         private void btnViewBookings_Click(object sender, EventArgs e)
         {
@@ -160,11 +239,20 @@ namespace abog.UI
                 return;
             }
 
+            OpenViewForm(dataGridView1.SelectedRows[0].Index);
+        }
+
+        // =========================
+        // OPEN VIEW FORM
+        // =========================
+        private void OpenViewForm(int rowIndex)
+        {
             int bookingId = Convert.ToInt32(
-                dataGridView1.SelectedRows[0].Cells["booking_id"].Value
+                dataGridView1.Rows[rowIndex].Cells["booking_id"].Value
             );
 
             View viewForm = new View();
+            viewForm.FormClosed += (s, args) => LoadBookings();
             Main_Form.LoadForm(viewForm);
         }
 
