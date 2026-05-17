@@ -66,7 +66,7 @@
             panelLeft.Controls.Add(pictureBox3);
             panelLeft.Dock = DockStyle.Left;
             panelLeft.Location = new Point(0, 0);
-            panelLeft.Margin = new Padding(2, 2, 2, 2);
+            panelLeft.Margin = new Padding(2);
             panelLeft.Name = "panelLeft";
             panelLeft.Size = new Size(333, 450);
             panelLeft.TabIndex = 0;
@@ -87,7 +87,7 @@
             // 
             pictureBox5.Image = Properties.Resources.c_nalang;
             pictureBox5.Location = new Point(53, 673);
-            pictureBox5.Margin = new Padding(2, 2, 2, 2);
+            pictureBox5.Margin = new Padding(2);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(35, 31);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -98,7 +98,7 @@
             // 
             pictureBox1.Image = Properties.Resources.abogg_c_eloysa_removebg_preview;
             pictureBox1.Location = new Point(37, 31);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(104, 41);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -109,7 +109,7 @@
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
             pictureBox4.Location = new Point(37, 265);
-            pictureBox4.Margin = new Padding(2, 2, 2, 2);
+            pictureBox4.Margin = new Padding(2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(246, 58);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -120,7 +120,7 @@
             // 
             pictureBox2.Image = Properties.Resources.we_cleann;
             pictureBox2.Location = new Point(37, 113);
-            pictureBox2.Margin = new Padding(2, 2, 2, 2);
+            pictureBox2.Margin = new Padding(2);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(246, 58);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -131,7 +131,7 @@
             // 
             pictureBox3.Image = Properties.Resources.we_arrivee;
             pictureBox3.Location = new Point(37, 186);
-            pictureBox3.Margin = new Padding(2, 2, 2, 2);
+            pictureBox3.Margin = new Padding(2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(246, 58);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -143,7 +143,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
-            label1.Location = new Point(400, 46);
+            label1.Location = new Point(394, 74);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(130, 41);
@@ -155,7 +155,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.Transparent;
             label5.ForeColor = Color.FromArgb(90, 118, 132);
-            label5.Location = new Point(475, 307);
+            label5.Location = new Point(469, 335);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(142, 15);
@@ -166,7 +166,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.FromArgb(90, 118, 132);
-            label3.Location = new Point(428, 213);
+            label3.Location = new Point(422, 241);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(57, 15);
@@ -177,7 +177,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.FromArgb(90, 118, 132);
-            label2.Location = new Point(428, 164);
+            label2.Location = new Point(422, 192);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(36, 15);
@@ -190,8 +190,8 @@
             btnSignup.FlatStyle = FlatStyle.Flat;
             btnSignup.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSignup.ForeColor = Color.White;
-            btnSignup.Location = new Point(428, 280);
-            btnSignup.Margin = new Padding(2, 2, 2, 2);
+            btnSignup.Location = new Point(422, 308);
+            btnSignup.Margin = new Padding(2);
             btnSignup.Name = "btnSignup";
             btnSignup.Size = new Size(281, 25);
             btnSignup.TabIndex = 13;
@@ -202,7 +202,7 @@
             // txtPassword
             // 
             txtPassword.BorderStyle = BorderStyle.FixedSingle;
-            txtPassword.Location = new Point(611, 458);
+            txtPassword.Location = new Point(422, 265);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(282, 23);
             txtPassword.TabIndex = 11;
@@ -210,8 +210,8 @@
             // txtEmail
             // 
             txtEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtEmail.Location = new Point(428, 181);
-            txtEmail.Margin = new Padding(2, 2, 2, 2);
+            txtEmail.Location = new Point(422, 216);
+            txtEmail.Margin = new Padding(2);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(282, 23);
             txtEmail.TabIndex = 10;
@@ -224,7 +224,7 @@
             linkLogin.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             linkLogin.LinkBehavior = LinkBehavior.NeverUnderline;
             linkLogin.LinkColor = Color.FromArgb(90, 118, 132);
-            linkLogin.Location = new Point(620, 307);
+            linkLogin.Location = new Point(614, 335);
             linkLogin.Margin = new Padding(2, 0, 2, 0);
             linkLogin.Name = "linkLogin";
             linkLogin.Size = new Size(40, 15);
@@ -235,23 +235,23 @@
             // 
             // txtFirstName
             // 
-            txtFirstName.Location = new Point(369, 90);
+            txtFirstName.Location = new Point(394, 148);
             txtFirstName.Name = "txtFirstName";
-            txtFirstName.Size = new Size(402, 23);
+            txtFirstName.Size = new Size(160, 23);
             txtFirstName.TabIndex = 20;
             // 
             // txtPhoneNumber
             // 
-            txtPhoneNumber.Location = new Point(611, 542);
+            txtPhoneNumber.Location = new Point(394, 184);
             txtPhoneNumber.Name = "txtPhoneNumber";
-            txtPhoneNumber.Size = new Size(402, 23);
+            txtPhoneNumber.Size = new Size(342, 23);
             txtPhoneNumber.TabIndex = 21;
             // 
             // txtLastName
             // 
-            txtLastName.Location = new Point(369, 119);
+            txtLastName.Location = new Point(560, 148);
             txtLastName.Name = "txtLastName";
-            txtLastName.Size = new Size(402, 23);
+            txtLastName.Size = new Size(176, 23);
             txtLastName.TabIndex = 22;
             // 
             // SignupForm
@@ -273,7 +273,7 @@
             Controls.Add(txtEmail);
             Controls.Add(label1);
             Controls.Add(panelLeft);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "SignupForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SignupForm";

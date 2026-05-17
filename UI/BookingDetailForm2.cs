@@ -60,33 +60,54 @@ namespace abog.UI
                 return;
             }
 
-            if (txtAddress.Text == "")
-            {
-                MessageBox.Show("Please enter address.");
-                return;
-            }
-
-            if (txtEmail.Text == "")
-            {
-                MessageBox.Show("Please enter email.");
-                return;
-            }
-
-            if (txtFirstName.Text == "")
+            if (string.IsNullOrWhiteSpace(txtFirstName.Text))
             {
                 MessageBox.Show("Please enter first name.");
+                txtFirstName.Focus();
                 return;
             }
 
-            if (txtLastName.Text == "")
+            if (string.IsNullOrWhiteSpace(txtLastName.Text))
             {
                 MessageBox.Show("Please enter last name.");
+                txtLastName.Focus();
                 return;
             }
 
-            if (txtPhoneNum.Text == "")
+            if (string.IsNullOrWhiteSpace(txtAddress.Text))
             {
-                MessageBox.Show("Please enter phone num.");
+                MessageBox.Show("Please enter address.");
+                txtAddress.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                MessageBox.Show("Please enter email.");
+                txtEmail.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtPhoneNum.Text))
+            {
+                MessageBox.Show("Please enter phone number.");
+                txtPhoneNum.Focus();
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(
+                    txtEmail.Text,
+                    @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("Please enter a valid email address.");
+                txtEmail.Focus();
+                return;
+            }
+
+            if (!long.TryParse(txtPhoneNum.Text, out _))
+            {
+                MessageBox.Show("Please enter a valid phone number.");
+                txtPhoneNum.Focus();
                 return;
             }
 
@@ -108,6 +129,29 @@ namespace abog.UI
         private void btnBasic_Click(object sender, EventArgs e)
         {
 
+        }
+
+        public BookingDetailForm2(ConfirmBookingForm3 data)
+        {
+            InitializeComponent();
+
+            // Pre-fill all fields from passed data
+            selectedService = data.Service;
+
+            // These run after InitializeComponent so controls exist
+            this.Load += (s, e) =>
+            {
+                txtFirstName.Text = data.FirstName;
+                txtLastName.Text = data.LastName;
+                txtAddress.Text = data.Address;
+                txtEmail.Text = data.Email;
+                txtPhoneNum.Text = data.Phone;
+                dtpDate.Value = data.PreferredDate;
+                dtpTime.Value = data.PreferredTime;
+                txtInstructions.Text = data.Instructions;
+
+                HighlightService(); // re-highlight the selected service button
+            };
         }
     }
 }
