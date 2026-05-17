@@ -153,5 +153,11 @@ namespace abog.UI
                 HighlightService(); // re-highlight the selected service button
             };
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            BookServiceForm1 frm = new BookServiceForm1();
+            Main_Form.LoadForm(frm);
+        }
     }
 }
