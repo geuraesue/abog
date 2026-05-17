@@ -1,4 +1,8 @@
-﻿using System;
+﻿using abog.Models;
+using abog.Services;
+using abog.UI;
+using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -41,6 +45,27 @@ namespace abog
         {
             RoundButton(btnBasClean);
             panel1.SendToBack();
+        }
+
+        private void linkBack_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Main_Form.LoadForm(new homePage());
+        }
+
+        private void btnBasClean_Click(object sender, EventArgs e)
+        {
+            if (!Users.IsLoggedIn)
+            {
+                // Not logged in — show login form
+                Main_Form.LoadForm(new LoginForm());
+
+                // Check again after login form closes
+                if (!Users.IsLoggedIn)
+                    return; // they closed without logging in
+            }
+
+            // ✅ Logged in — proceed to booking
+            Main_Form.LoadForm(new BookServiceForm1());
         }
     }
 }

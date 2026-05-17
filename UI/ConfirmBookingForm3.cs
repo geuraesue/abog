@@ -35,6 +35,8 @@ namespace abog.UI
         // =========================
         private void ConfirmBookingForm3_Load(object sender, EventArgs e)
         {
+            label12.Text = DateTime.Now.ToString("MMMM dd, yyyy");
+            lblName.Text = $"{FirstName} {LastName}";
             lblService.Text = Service ?? "";
 
             lblDateTime.Text =
@@ -55,6 +57,8 @@ namespace abog.UI
                 case "Deep Clean": price = 3199; break;
                 case "Auto Detail": price = 499; break;
             }
+
+            lblTotal.Text = $"₱ {price:N0}";
         }
 
         // =========================
@@ -62,7 +66,8 @@ namespace abog.UI
         // =========================
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Close();
+            BookingDetailForm2 frm = new BookingDetailForm2(this);
+            Main_Form.LoadForm(frm);
         }
 
         // =========================
@@ -116,6 +121,7 @@ namespace abog.UI
                 // CREATE BOOKING
                 // =========================
                 Booking booking = new Booking();
+
 
                 booking.UserId = userId;
                 booking.ServiceId = serviceId;   // uses validated ID
@@ -176,6 +182,21 @@ namespace abog.UI
         }
 
         private void lblName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirm_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblService_Click(object sender, EventArgs e)
         {
 
         }

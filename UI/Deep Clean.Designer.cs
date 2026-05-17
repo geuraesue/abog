@@ -45,9 +45,10 @@
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(linkBack);
-            panel1.Location = new Point(61, 63);
+            panel1.Location = new Point(43, 38);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1023, 619);
+            panel1.Size = new Size(716, 371);
             panel1.TabIndex = 16;
             // 
             // linkBack
@@ -58,21 +59,22 @@
             linkBack.ForeColor = Color.FromArgb(90, 118, 132);
             linkBack.LinkBehavior = LinkBehavior.AlwaysUnderline;
             linkBack.LinkColor = Color.FromArgb(90, 118, 132);
-            linkBack.Location = new Point(31, 10);
+            linkBack.Location = new Point(22, 6);
+            linkBack.Margin = new Padding(2, 0, 2, 0);
             linkBack.Name = "linkBack";
-            linkBack.Size = new Size(185, 25);
+            linkBack.Size = new Size(121, 15);
             linkBack.TabIndex = 0;
             linkBack.TabStop = true;
             linkBack.Text = "<- Back to dashboard";
+            linkBack.LinkClicked += linkBack_LinkClicked;
             // 
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = Properties.Resources.deepClean;
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(105, 115);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(74, 69);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(331, 437);
+            pictureBox1.Size = new Size(232, 262);
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
             // 
@@ -82,10 +84,9 @@
             label3.BackColor = Color.White;
             label3.Font = new Font("Segoe UI Variable Display", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.FromArgb(90, 118, 132);
-            label3.Location = new Point(161, 556);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(113, 334);
             label3.Name = "label3";
-            label3.Size = new Size(215, 54);
+            label3.Size = new Size(140, 36);
             label3.TabIndex = 18;
             label3.Text = "PHP 3,199";
             // 
@@ -95,12 +96,14 @@
             btnDeepClean.FlatStyle = FlatStyle.Flat;
             btnDeepClean.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDeepClean.ForeColor = Color.White;
-            btnDeepClean.Location = new Point(217, 613);
+            btnDeepClean.Location = new Point(152, 368);
+            btnDeepClean.Margin = new Padding(2);
             btnDeepClean.Name = "btnDeepClean";
-            btnDeepClean.Size = new Size(111, 33);
+            btnDeepClean.Size = new Size(78, 20);
             btnDeepClean.TabIndex = 19;
             btnDeepClean.Text = "Book";
             btnDeepClean.UseVisualStyleBackColor = false;
+            btnDeepClean.Click += btnDeepClean_Click;
             // 
             // label1
             // 
@@ -108,10 +111,9 @@
             label1.BackColor = Color.White;
             label1.Font = new Font("Segoe UI Variable Small", 20.25F, FontStyle.Bold);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
-            label1.Location = new Point(622, 88);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(435, 53);
             label1.Name = "label1";
-            label1.Size = new Size(265, 54);
+            label1.Size = new Size(176, 36);
             label1.TabIndex = 20;
             label1.Text = "DEEP CLEAN";
             // 
@@ -121,10 +123,9 @@
             label2.BackColor = Color.White;
             label2.Font = new Font("Segoe UI Emoji", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(148, 163, 124);
-            label2.Location = new Point(481, 142);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(337, 85);
             label2.Name = "label2";
-            label2.Size = new Size(574, 27);
+            label2.Size = new Size(403, 17);
             label2.TabIndex = 21;
             label2.Text = "Heavy-duty cleaning for large and post-renovation spaces";
             // 
@@ -133,20 +134,19 @@
             pictureBox3.BackColor = Color.White;
             pictureBox3.BackgroundImage = Properties.Resources.deepWew;
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.Location = new Point(491, 187);
-            pictureBox3.Margin = new Padding(4, 5, 4, 5);
+            pictureBox3.Location = new Point(344, 112);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(554, 423);
+            pictureBox3.Size = new Size(388, 254);
             pictureBox3.TabIndex = 22;
             pictureBox3.TabStop = false;
             // 
             // deepClean
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.d9c3a45d_0958_4e44_bf30_c2b2dffd7ab4;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(800, 450);
             Controls.Add(pictureBox3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -154,7 +154,6 @@
             Controls.Add(label3);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
-            Margin = new Padding(4, 5, 4, 5);
             Name = "deepClean";
             Text = "Deep Clean";
             Load += Form4_Load;
