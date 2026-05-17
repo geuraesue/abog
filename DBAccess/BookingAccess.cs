@@ -44,7 +44,7 @@ namespace abog.DBAccess
             }
         }
 
-        // 🔥 GET BOOKING BY ID
+        // GET BOOKING BY ID
         public Booking GetBookingById(int bookingId)
         {
             string query = @"
@@ -84,7 +84,7 @@ namespace abog.DBAccess
             return null;
         }
 
-        // 🔥 UPDATE STATUS (APPROVE / REJECT / PENDING)
+        // UPDATE STATUS (APPROVE / REJECT / PENDING)
         public bool UpdateBookingStatus(int bookingId, string status)
         {
             try
@@ -118,7 +118,7 @@ namespace abog.DBAccess
             }
         }
 
-        // 🔥 OPTIONAL: DELETE BOOKING
+        // OPTIONAL: DELETE BOOKING
         public bool DeleteBooking(int bookingId)
         {
             try
@@ -150,7 +150,7 @@ namespace abog.DBAccess
             }
         }
 
-        // 🔥 CREATE BOOKING
+        //CREATE BOOKING
         public bool CreateBooking(Booking booking)
         {
             try

@@ -37,27 +37,36 @@
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            label5 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            btnSignup = new Button();
-            txtPassword = new TextBox();
-            txtEmail = new TextBox();
-            linkLogin = new LinkLabel();
             txtFirstName = new TextBox();
-            txtPhoneNumber = new TextBox();
             txtLastName = new TextBox();
+            txtEmail = new TextBox();
+            txtPassword = new TextBox();
+            txtPhoneNumber = new TextBox();
+            btnSignup = new Button();
+            label5 = new Label();
+            linkLogin = new LinkLabel();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label6 = new Label();
+            label8 = new Label();
+            linkBack = new LinkLabel();
+            pictureBox6 = new PictureBox();
+            label9 = new Label();
             panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // panelLeft
             // 
             panelLeft.BackColor = Color.FromArgb(90, 118, 132);
+            panelLeft.Controls.Add(label9);
+            panelLeft.Controls.Add(pictureBox6);
             panelLeft.Controls.Add(label7);
             panelLeft.Controls.Add(pictureBox5);
             panelLeft.Controls.Add(pictureBox1);
@@ -68,7 +77,7 @@
             panelLeft.Location = new Point(0, 0);
             panelLeft.Name = "panelLeft";
             panelLeft.Size = new Size(476, 750);
-            panelLeft.TabIndex = 0;
+            panelLeft.TabIndex = 1;
             // 
             // label7
             // 
@@ -136,42 +145,55 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(90, 118, 132);
-            label1.Location = new Point(572, 76);
+            label1.Location = new Point(609, 112);
             label1.Name = "label1";
             label1.Size = new Size(188, 60);
-            label1.TabIndex = 4;
+            label1.TabIndex = 5;
             label1.Text = "Sign Up";
+            label1.Click += this.label1_Click;
             // 
-            // label5
+            // txtFirstName
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
-            label5.ForeColor = Color.FromArgb(90, 118, 132);
-            label5.Location = new Point(679, 512);
-            label5.Name = "label5";
-            label5.Size = new Size(213, 25);
-            label5.TabIndex = 17;
-            label5.Text = "Already have an account?";
+            txtFirstName.BorderStyle = BorderStyle.FixedSingle;
+            txtFirstName.ForeColor = Color.FromArgb(90, 118, 132);
+            txtFirstName.Location = new Point(619, 236);
+            txtFirstName.Margin = new Padding(4, 5, 4, 5);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.Size = new Size(198, 31);
+            txtFirstName.TabIndex = 21;
             // 
-            // label3
+            // txtLastName
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.FromArgb(90, 118, 132);
-            label3.Location = new Point(611, 355);
-            label3.Name = "label3";
-            label3.Size = new Size(87, 25);
-            label3.TabIndex = 15;
-            label3.Text = "Password";
+            txtLastName.BorderStyle = BorderStyle.FixedSingle;
+            txtLastName.Location = new Point(825, 236);
+            txtLastName.Margin = new Padding(4, 5, 4, 5);
+            txtLastName.Name = "txtLastName";
+            txtLastName.Size = new Size(195, 31);
+            txtLastName.TabIndex = 23;
             // 
-            // label2
+            // txtEmail
             // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.FromArgb(90, 118, 132);
-            label2.Location = new Point(611, 273);
-            label2.Name = "label2";
-            label2.Size = new Size(54, 25);
-            label2.TabIndex = 14;
-            label2.Text = "Email";
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.Location = new Point(621, 300);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(399, 31);
+            txtEmail.TabIndex = 24;
+            // 
+            // txtPassword
+            // 
+            txtPassword.BorderStyle = BorderStyle.FixedSingle;
+            txtPassword.Location = new Point(621, 424);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(399, 31);
+            txtPassword.TabIndex = 25;
+            // 
+            // txtPhoneNumber
+            // 
+            txtPhoneNumber.BorderStyle = BorderStyle.FixedSingle;
+            txtPhoneNumber.Location = new Point(621, 362);
+            txtPhoneNumber.Name = "txtPhoneNumber";
+            txtPhoneNumber.Size = new Size(399, 31);
+            txtPhoneNumber.TabIndex = 26;
             // 
             // btnSignup
             // 
@@ -179,30 +201,23 @@
             btnSignup.FlatStyle = FlatStyle.Flat;
             btnSignup.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSignup.ForeColor = Color.White;
-            btnSignup.Location = new Point(611, 455);
+            btnSignup.Location = new Point(621, 483);
             btnSignup.Name = "btnSignup";
-            btnSignup.Size = new Size(401, 42);
-            btnSignup.TabIndex = 13;
+            btnSignup.Size = new Size(399, 42);
+            btnSignup.TabIndex = 27;
             btnSignup.Text = "Sign Up";
             btnSignup.UseVisualStyleBackColor = false;
-            btnSignup.Click += btnSignup_Click;
             // 
-            // txtPassword
+            // label5
             // 
-            txtPassword.BorderStyle = BorderStyle.FixedSingle;
-            txtPassword.Location = new Point(873, 763);
-            txtPassword.Margin = new Padding(4, 5, 4, 5);
-            txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(402, 31);
-            txtPassword.TabIndex = 11;
-            // 
-            // txtEmail
-            // 
-            txtEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtEmail.Location = new Point(611, 302);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(402, 31);
-            txtEmail.TabIndex = 10;
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.ForeColor = Color.FromArgb(90, 118, 132);
+            label5.Location = new Point(667, 537);
+            label5.Name = "label5";
+            label5.Size = new Size(213, 25);
+            label5.TabIndex = 28;
+            label5.Text = "Already have an account?";
             // 
             // linkLogin
             // 
@@ -210,39 +225,107 @@
             linkLogin.AutoSize = true;
             linkLogin.BackColor = Color.Transparent;
             linkLogin.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            linkLogin.LinkBehavior = LinkBehavior.NeverUnderline;
+            linkLogin.LinkBehavior = LinkBehavior.AlwaysUnderline;
             linkLogin.LinkColor = Color.FromArgb(90, 118, 132);
-            linkLogin.Location = new Point(886, 512);
+            linkLogin.Location = new Point(875, 537);
             linkLogin.Name = "linkLogin";
             linkLogin.Size = new Size(64, 25);
-            linkLogin.TabIndex = 18;
+            linkLogin.TabIndex = 29;
             linkLogin.TabStop = true;
             linkLogin.Text = "Log in";
-            linkLogin.LinkClicked += linkLogin_LinkClicked;
             // 
-            // txtFirstName
+            // label2
             // 
-            txtFirstName.Location = new Point(536, 188);
-            txtFirstName.Margin = new Padding(4, 5, 4, 5);
-            txtFirstName.Name = "txtFirstName";
-            txtFirstName.Size = new Size(573, 31);
-            txtFirstName.TabIndex = 20;
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.ForeColor = Color.FromArgb(90, 118, 132);
+            label2.Location = new Point(619, 206);
+            label2.Name = "label2";
+            label2.Size = new Size(94, 25);
+            label2.TabIndex = 30;
+            label2.Text = "First name";
+            label2.Click += this.label2_Click;
             // 
-            // txtPhoneNumber
+            // label3
             // 
-            txtPhoneNumber.Location = new Point(873, 903);
-            txtPhoneNumber.Margin = new Padding(4, 5, 4, 5);
-            txtPhoneNumber.Name = "txtPhoneNumber";
-            txtPhoneNumber.Size = new Size(573, 31);
-            txtPhoneNumber.TabIndex = 21;
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.ForeColor = Color.FromArgb(90, 118, 132);
+            label3.Location = new Point(825, 206);
+            label3.Name = "label3";
+            label3.Size = new Size(92, 25);
+            label3.TabIndex = 31;
+            label3.Text = "Last name";
             // 
-            // txtLastName
+            // label4
             // 
-            txtLastName.Location = new Point(527, 229);
-            txtLastName.Margin = new Padding(4, 5, 4, 5);
-            txtLastName.Name = "txtLastName";
-            txtLastName.Size = new Size(573, 31);
-            txtLastName.TabIndex = 22;
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.ForeColor = Color.FromArgb(90, 118, 132);
+            label4.Location = new Point(619, 272);
+            label4.Name = "label4";
+            label4.Size = new Size(54, 25);
+            label4.TabIndex = 32;
+            label4.Text = "Email";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.ForeColor = Color.FromArgb(90, 118, 132);
+            label6.Location = new Point(619, 334);
+            label6.Name = "label6";
+            label6.Size = new Size(129, 25);
+            label6.TabIndex = 33;
+            label6.Text = "Phone number";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.ForeColor = Color.FromArgb(90, 118, 132);
+            label8.Location = new Point(619, 396);
+            label8.Name = "label8";
+            label8.Size = new Size(87, 25);
+            label8.TabIndex = 34;
+            label8.Text = "Password";
+            // 
+            // linkBack
+            // 
+            linkBack.ActiveLinkColor = Color.FromArgb(90, 118, 132);
+            linkBack.AutoSize = true;
+            linkBack.BackColor = Color.Transparent;
+            linkBack.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkBack.ForeColor = Color.FromArgb(90, 118, 132);
+            linkBack.LinkBehavior = LinkBehavior.AlwaysUnderline;
+            linkBack.LinkColor = Color.FromArgb(90, 118, 132);
+            linkBack.Location = new Point(509, 52);
+            linkBack.Name = "linkBack";
+            linkBack.Size = new Size(183, 24);
+            linkBack.TabIndex = 35;
+            linkBack.TabStop = true;
+            linkBack.Text = "<- Back to dashboard";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.c_nalang;
+            pictureBox6.Location = new Point(53, 687);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(25, 21);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 10;
+            pictureBox6.TabStop = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = SystemColors.ButtonHighlight;
+            label9.Location = new Point(84, 687);
+            label9.Name = "label9";
+            label9.Size = new Size(206, 21);
+            label9.TabIndex = 11;
+            label9.Text = "2026 abog cleaning services";
             // 
             // SignupForm
             // 
@@ -251,21 +334,25 @@
             BackgroundImage = Properties.Resources.d9c3a45d_0958_4e44_bf30_c2b2dffd7ab4;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1143, 750);
-            Controls.Add(txtLastName);
-            Controls.Add(txtPhoneNumber);
-            Controls.Add(txtFirstName);
-            Controls.Add(linkLogin);
-            Controls.Add(label5);
+            Controls.Add(linkBack);
+            Controls.Add(label8);
+            Controls.Add(label6);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
+            Controls.Add(linkLogin);
+            Controls.Add(label5);
             Controls.Add(btnSignup);
+            Controls.Add(txtPhoneNumber);
             Controls.Add(txtPassword);
             Controls.Add(txtEmail);
+            Controls.Add(txtLastName);
+            Controls.Add(txtFirstName);
             Controls.Add(label1);
             Controls.Add(panelLeft);
             Name = "SignupForm";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "SignupForm";
+            Text = "Sign up ";
+            Load += SignupForm_Load;
             panelLeft.ResumeLayout(false);
             panelLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -273,6 +360,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -280,23 +368,28 @@
         #endregion
 
         private Panel panelLeft;
+        private Label label7;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox1;
         private PictureBox pictureBox4;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox1;
-        private Label label7;
         private Label label1;
-        private Label label6;
-        private Label label5;
-        private Label label3;
-        private Label label2;
-        private Button btnSignup;
-        private TextBox txtPassword;
-        private TextBox txtEmail;
-        private PictureBox pictureBox5;
-        private LinkLabel linkLogin;
         private TextBox txtFirstName;
-        private TextBox txtPhoneNumber;
         private TextBox txtLastName;
+        private TextBox txtEmail;
+        private TextBox txtPassword;
+        private TextBox txtPhoneNumber;
+        private Button btnSignup;
+        private Label label5;
+        private LinkLabel linkLogin;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label6;
+        private Label label8;
+        private LinkLabel linkBack;
+        private PictureBox pictureBox6;
+        private Label label9;
     }
 }

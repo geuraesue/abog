@@ -34,7 +34,7 @@ namespace abog.UI
                 string password = txtPassword.Text.Trim();
                 string phoneNumber = txtPhoneNumber.Text.Trim();
 
-                // 🔥 DEBUG: show input values
+                //DEBUG: show input values
                 MessageBox.Show(
                     $"DEBUG INPUT:\n{firstName}\n{lastName}\n{email}\n{phoneNumber}"
                 );
@@ -42,7 +42,7 @@ namespace abog.UI
                 // basic validation
                 if (string.IsNullOrEmpty(email) || string.IsNullOrEmpty(phoneNumber))
                 {
-                    MessageBox.Show("Email and phone number are required!");
+                    MessageBox.Show("Please enter email and phone number.");
                     return;
                 }
 
@@ -56,7 +56,7 @@ namespace abog.UI
                 }
                 else
                 {
-                    MessageBox.Show("User already exists (email or phone duplicate).");
+                    MessageBox.Show("User already exists.");
                 }
             }
             catch (Exception ex)
@@ -64,6 +64,10 @@ namespace abog.UI
                 MessageBox.Show("ERROR: " + ex.Message);
             }
         }
-        
+
+        private void SignupForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
