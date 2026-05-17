@@ -36,9 +36,6 @@
             label3 = new Label();
             label2 = new Label();
             label5 = new Label();
-            panel1 = new Panel();
-            label12 = new Label();
-            label9 = new Label();
             lblAddress = new Label();
             panel8 = new Panel();
             tableLayoutPanel2 = new TableLayoutPanel();
@@ -66,7 +63,6 @@
             panel7 = new Panel();
             panel9 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
             panel8.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -166,43 +162,6 @@
             label5.TabIndex = 31;
             label5.Text = "Confirm your booking";
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(120, 176, 67);
-            panel1.Controls.Add(label12);
-            panel1.Controls.Add(label9);
-            panel1.Location = new Point(60, 113);
-            panel1.Margin = new Padding(2);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(685, 16);
-            panel1.TabIndex = 32;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.BackColor = Color.Transparent;
-            label12.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.White;
-            label12.Location = new Point(572, 0);
-            label12.Margin = new Padding(2, 0, 2, 0);
-            label12.Name = "label12";
-            label12.Size = new Size(63, 16);
-            label12.TabIndex = 54;
-            label12.Text = "date today";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.BackColor = Color.Transparent;
-            label9.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(19, 0);
-            label9.Margin = new Padding(2, 0, 2, 0);
-            label9.Name = "label9";
-            label9.Size = new Size(77, 16);
-            label9.TabIndex = 53;
-            label9.Text = "● Confirmed";
-            // 
             // lblAddress
             // 
             lblAddress.AutoSize = true;
@@ -222,7 +181,7 @@
             panel8.BorderStyle = BorderStyle.FixedSingle;
             panel8.Controls.Add(tableLayoutPanel2);
             panel8.Controls.Add(label6);
-            panel8.Location = new Point(60, 253);
+            panel8.Location = new Point(60, 232);
             panel8.Margin = new Padding(2);
             panel8.Name = "panel8";
             panel8.Size = new Size(685, 93);
@@ -353,7 +312,7 @@
             lblInstruction.BackColor = SystemColors.Control;
             lblInstruction.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblInstruction.ForeColor = Color.FromArgb(90, 118, 132);
-            lblInstruction.Location = new Point(65, 374);
+            lblInstruction.Location = new Point(65, 353);
             lblInstruction.Margin = new Padding(2, 0, 2, 0);
             lblInstruction.Name = "lblInstruction";
             lblInstruction.Size = new Size(164, 16);
@@ -407,7 +366,7 @@
             btnBack.FlatStyle = FlatStyle.Flat;
             btnBack.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnBack.ForeColor = Color.FromArgb(90, 118, 132);
-            btnBack.Location = new Point(60, 411);
+            btnBack.Location = new Point(60, 390);
             btnBack.Margin = new Padding(2);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(339, 24);
@@ -422,7 +381,7 @@
             btnConfirm.FlatStyle = FlatStyle.Flat;
             btnConfirm.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnConfirm.ForeColor = Color.White;
-            btnConfirm.Location = new Point(412, 411);
+            btnConfirm.Location = new Point(412, 390);
             btnConfirm.Margin = new Padding(2);
             btnConfirm.Name = "btnConfirm";
             btnConfirm.Size = new Size(332, 24);
@@ -497,7 +456,7 @@
             tableLayoutPanel1.Controls.Add(lblAddress, 1, 2);
             tableLayoutPanel1.Controls.Add(lblDateTime, 1, 1);
             tableLayoutPanel1.Controls.Add(lblService, 1, 0);
-            tableLayoutPanel1.Location = new Point(60, 144);
+            tableLayoutPanel1.Location = new Point(60, 123);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 4;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 49.0196075F));
@@ -512,7 +471,7 @@
             // panel4
             // 
             panel4.BackColor = Color.LightGray;
-            panel4.Location = new Point(57, 161);
+            panel4.Location = new Point(57, 140);
             panel4.Margin = new Padding(2);
             panel4.Name = "panel4";
             panel4.Size = new Size(690, 2);
@@ -521,7 +480,7 @@
             // panel5
             // 
             panel5.BackColor = Color.LightGray;
-            panel5.Location = new Point(57, 183);
+            panel5.Location = new Point(57, 162);
             panel5.Margin = new Padding(2);
             panel5.Name = "panel5";
             panel5.Size = new Size(690, 2);
@@ -530,7 +489,7 @@
             // panel6
             // 
             panel6.BackColor = Color.LightGray;
-            panel6.Location = new Point(57, 207);
+            panel6.Location = new Point(57, 186);
             panel6.Margin = new Padding(2);
             panel6.Name = "panel6";
             panel6.Size = new Size(690, 2);
@@ -539,7 +498,7 @@
             // panel7
             // 
             panel7.BackColor = Color.LightGray;
-            panel7.Location = new Point(58, 231);
+            panel7.Location = new Point(58, 210);
             panel7.Margin = new Padding(2);
             panel7.Name = "panel7";
             panel7.Size = new Size(690, 2);
@@ -548,7 +507,7 @@
             // panel9
             // 
             panel9.BorderStyle = BorderStyle.FixedSingle;
-            panel9.Location = new Point(60, 370);
+            panel9.Location = new Point(60, 349);
             panel9.Name = "panel9";
             panel9.Size = new Size(685, 26);
             panel9.TabIndex = 53;
@@ -570,7 +529,6 @@
             Controls.Add(panel3);
             Controls.Add(lblInstruction);
             Controls.Add(panel8);
-            Controls.Add(panel1);
             Controls.Add(label5);
             Controls.Add(panel2);
             Controls.Add(label4);
@@ -584,8 +542,6 @@
             Text = "Confirm Booking";
             Load += ConfirmBookingForm3_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             tableLayoutPanel2.ResumeLayout(false);
@@ -606,9 +562,7 @@
         private Label label3;
         private Label label2;
         private Label label5;
-        private Panel panel1;
         private Label lblAddress;
-        private Label label9;
         private Panel panel8;
         private Label lblPhone;
         private Label lblEmail;
@@ -625,7 +579,6 @@
         private Label label10;
         private Label label11;
         private TableLayoutPanel tableLayoutPanel1;
-        private Label label12;
         private Label label15;
         private Label label14;
         private Label label13;

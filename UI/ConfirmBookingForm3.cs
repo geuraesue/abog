@@ -35,7 +35,7 @@ namespace abog.UI
         // =========================
         private void ConfirmBookingForm3_Load(object sender, EventArgs e)
         {
-            label12.Text = DateTime.Now.ToString("MMMM dd, yyyy");
+           
             lblName.Text = $"{FirstName} {LastName}";
             lblService.Text = Service ?? "";
 
@@ -188,7 +188,7 @@ namespace abog.UI
 
         private void btnConfirm_Click_1(object sender, EventArgs e)
         {
-
+            Main_Form.LoadForm(new homePage2());
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
