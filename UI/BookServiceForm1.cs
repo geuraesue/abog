@@ -146,5 +146,10 @@ namespace abog.UI
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Main_Form.LoadForm(new homePage2());
+        }
     }
 }
