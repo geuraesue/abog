@@ -28,82 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View));
-            pictureBox1 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
             panel1 = new Panel();
+            linkLabel1 = new LinkLabel();
             label2 = new Label();
             panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
+            lblEmail = new Label();
+            lblPhone = new Label();
+            lblAddress = new Label();
+            lblName = new Label();
             label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
+            panel3 = new Panel();
+            lblPrice = new Label();
+            lblDate = new Label();
+            lblInstructions = new Label();
+            lblService = new Label();
             label8 = new Label();
-            label9 = new Label();
+            panel4 = new Panel();
             label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            panel5 = new Panel();
-            panel6 = new Panel();
-            label15 = new Label();
-            pictureBox2 = new PictureBox();
-            linkLabel1 = new LinkLabel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            label9 = new Label();
+            pictureBox1 = new PictureBox();
+            lblTime = new Label();
+            comboStatus = new ComboBox();
+            btnCancel = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(13, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(142, 58);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(910, 29);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(35, 31);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 9;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(952, 29);
-            pictureBox7.Margin = new Padding(4);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(136, 31);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 26;
-            pictureBox7.TabStop = false;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
             panel1.Controls.Add(linkLabel1);
-            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(38, 90);
+            panel1.Location = new Point(58, 90);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1050, 50);
+            panel1.Size = new Size(1022, 50);
             panel1.TabIndex = 27;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.LinkColor = Color.FromArgb(90, 118, 132);
+            linkLabel1.Location = new Point(20, 15);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(185, 25);
+            linkLabel1.TabIndex = 32;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "<- Back to dashboard";
             // 
             // label2
             // 
@@ -118,38 +90,59 @@
             // 
             // panel2
             // 
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label4);
+            panel2.Controls.Add(lblEmail);
+            panel2.Controls.Add(lblPhone);
+            panel2.Controls.Add(lblAddress);
+            panel2.Controls.Add(lblName);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(38, 165);
+            panel2.Location = new Point(58, 160);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1042, 175);
+            panel2.Size = new Size(1022, 175);
             panel2.TabIndex = 28;
             // 
-            // panel3
+            // lblEmail
             // 
-            panel3.Controls.Add(label14);
-            panel3.Controls.Add(label13);
-            panel3.Controls.Add(label12);
-            panel3.Controls.Add(label11);
-            panel3.Controls.Add(label8);
-            panel3.Location = new Point(38, 370);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(1042, 183);
-            panel3.TabIndex = 29;
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEmail.ForeColor = Color.FromArgb(90, 118, 132);
+            lblEmail.Location = new Point(781, 54);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(53, 21);
+            lblEmail.TabIndex = 34;
+            lblEmail.Text = "Email";
             // 
-            // panel4
+            // lblPhone
             // 
-            panel4.Controls.Add(panel6);
-            panel4.Controls.Add(panel5);
-            panel4.Controls.Add(label10);
-            panel4.Controls.Add(label9);
-            panel4.Location = new Point(38, 578);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(1042, 160);
-            panel4.TabIndex = 30;
+            lblPhone.AutoSize = true;
+            lblPhone.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPhone.ForeColor = Color.FromArgb(90, 118, 132);
+            lblPhone.Location = new Point(472, 54);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(59, 21);
+            lblPhone.TabIndex = 33;
+            lblPhone.Text = "Phone";
+            // 
+            // lblAddress
+            // 
+            lblAddress.AutoSize = true;
+            lblAddress.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblAddress.ForeColor = Color.FromArgb(90, 118, 132);
+            lblAddress.Location = new Point(60, 117);
+            lblAddress.Name = "lblAddress";
+            lblAddress.Size = new Size(70, 21);
+            lblAddress.TabIndex = 32;
+            lblAddress.Text = "Address";
+            // 
+            // lblName
+            // 
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName.ForeColor = Color.FromArgb(90, 118, 132);
+            lblName.Location = new Point(60, 54);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(56, 21);
+            lblName.TabIndex = 31;
+            lblName.Text = "Name";
             // 
             // label3
             // 
@@ -162,49 +155,62 @@
             label3.TabIndex = 30;
             label3.Text = "CUSTOMER INFO";
             // 
-            // label4
+            // panel3
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.FromArgb(90, 118, 132);
-            label4.Location = new Point(60, 54);
-            label4.Name = "label4";
-            label4.Size = new Size(56, 21);
-            label4.TabIndex = 31;
-            label4.Text = "Name";
+            panel3.Controls.Add(lblTime);
+            panel3.Controls.Add(lblPrice);
+            panel3.Controls.Add(lblDate);
+            panel3.Controls.Add(lblInstructions);
+            panel3.Controls.Add(lblService);
+            panel3.Controls.Add(label8);
+            panel3.Location = new Point(58, 355);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1022, 183);
+            panel3.TabIndex = 29;
             // 
-            // label5
+            // lblPrice
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.FromArgb(90, 118, 132);
-            label5.Location = new Point(60, 117);
-            label5.Name = "label5";
-            label5.Size = new Size(70, 21);
-            label5.TabIndex = 32;
-            label5.Text = "Address";
+            lblPrice.AutoSize = true;
+            lblPrice.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPrice.ForeColor = Color.FromArgb(90, 118, 132);
+            lblPrice.Location = new Point(781, 59);
+            lblPrice.Name = "lblPrice";
+            lblPrice.Size = new Size(48, 21);
+            lblPrice.TabIndex = 37;
+            lblPrice.Text = "Price";
             // 
-            // label6
+            // lblDate
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = Color.FromArgb(90, 118, 132);
-            label6.Location = new Point(472, 54);
-            label6.Name = "label6";
-            label6.Size = new Size(59, 21);
-            label6.TabIndex = 33;
-            label6.Text = "Phone";
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblDate.ForeColor = Color.FromArgb(90, 118, 132);
+            lblDate.Location = new Point(472, 59);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(121, 21);
+            lblDate.TabIndex = 36;
+            lblDate.Text = "Date and Time";
             // 
-            // label7
+            // lblInstructions
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.FromArgb(90, 118, 132);
-            label7.Location = new Point(781, 54);
-            label7.Name = "label7";
-            label7.Size = new Size(53, 21);
-            label7.TabIndex = 34;
-            label7.Text = "Email";
+            lblInstructions.AutoSize = true;
+            lblInstructions.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblInstructions.ForeColor = Color.FromArgb(90, 118, 132);
+            lblInstructions.Location = new Point(60, 120);
+            lblInstructions.Name = "lblInstructions";
+            lblInstructions.Size = new Size(164, 21);
+            lblInstructions.TabIndex = 35;
+            lblInstructions.Text = "Note from customer";
+            // 
+            // lblService
+            // 
+            lblService.AutoSize = true;
+            lblService.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblService.ForeColor = Color.FromArgb(90, 118, 132);
+            lblService.Location = new Point(60, 59);
+            lblService.Name = "lblService";
+            lblService.Size = new Size(66, 21);
+            lblService.TabIndex = 35;
+            lblService.Text = "Service";
             // 
             // label8
             // 
@@ -217,16 +223,16 @@
             label8.TabIndex = 35;
             label8.Text = "BOOKING INFO";
             // 
-            // label9
+            // panel4
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.ForeColor = Color.FromArgb(90, 118, 132);
-            label9.Location = new Point(20, 23);
-            label9.Name = "label9";
-            label9.Size = new Size(149, 25);
-            label9.TabIndex = 36;
-            label9.Text = "ADMIN ACTION";
+            panel4.Controls.Add(btnCancel);
+            panel4.Controls.Add(comboStatus);
+            panel4.Controls.Add(label10);
+            panel4.Controls.Add(label9);
+            panel4.Location = new Point(58, 556);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(1022, 160);
+            panel4.TabIndex = 30;
             // 
             // label10
             // 
@@ -239,97 +245,56 @@
             label10.TabIndex = 35;
             label10.Text = "Update Status";
             // 
-            // label11
+            // label9
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(90, 118, 132);
-            label11.Location = new Point(60, 59);
-            label11.Name = "label11";
-            label11.Size = new Size(56, 21);
-            label11.TabIndex = 35;
-            label11.Text = "Name";
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.ForeColor = Color.FromArgb(90, 118, 132);
+            label9.Location = new Point(20, 23);
+            label9.Name = "label9";
+            label9.Size = new Size(149, 25);
+            label9.TabIndex = 36;
+            label9.Text = "ADMIN ACTION";
             // 
-            // label12
+            // pictureBox1
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.FromArgb(90, 118, 132);
-            label12.Location = new Point(60, 120);
-            label12.Name = "label12";
-            label12.Size = new Size(164, 21);
-            label12.TabIndex = 35;
-            label12.Text = "Note from customer";
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = Properties.Resources.abog;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Location = new Point(58, 24);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(141, 58);
+            pictureBox1.TabIndex = 31;
+            pictureBox1.TabStop = false;
             // 
-            // label13
+            // lblTime
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.FromArgb(90, 118, 132);
-            label13.Location = new Point(472, 59);
-            label13.Name = "label13";
-            label13.Size = new Size(121, 21);
-            label13.TabIndex = 36;
-            label13.Text = "Date and Time";
+            lblTime.AutoSize = true;
+            lblTime.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTime.ForeColor = Color.FromArgb(90, 118, 132);
+            lblTime.Location = new Point(472, 106);
+            lblTime.Name = "lblTime";
+            lblTime.Size = new Size(121, 21);
+            lblTime.TabIndex = 38;
+            lblTime.Text = "Date and Time";
             // 
-            // label14
+            // comboStatus
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.FromArgb(90, 118, 132);
-            label14.Location = new Point(781, 59);
-            label14.Name = "label14";
-            label14.Size = new Size(48, 21);
-            label14.TabIndex = 37;
-            label14.Text = "Price";
+            comboStatus.FormattingEnabled = true;
+            comboStatus.Location = new Point(60, 96);
+            comboStatus.Name = "comboStatus";
+            comboStatus.Size = new Size(426, 33);
+            comboStatus.TabIndex = 39;
             // 
-            // panel5
+            // btnCancel
             // 
-            panel5.Location = new Point(60, 96);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(453, 49);
-            panel5.TabIndex = 37;
-            // 
-            // panel6
-            // 
-            panel6.Controls.Add(label15);
-            panel6.Location = new Point(544, 96);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(453, 49);
-            panel6.TabIndex = 38;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.ForeColor = Color.Red;
-            label15.Location = new Point(147, 11);
-            label15.Name = "label15";
-            label15.Size = new Size(157, 28);
-            label15.TabIndex = 38;
-            label15.Text = "Cancel booking";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(882, 8);
-            pictureBox2.Margin = new Padding(4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(136, 31);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 31;
-            pictureBox2.TabStop = false;
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.LinkColor = Color.FromArgb(90, 118, 132);
-            linkLabel1.Location = new Point(20, 15);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(185, 25);
-            linkLabel1.TabIndex = 32;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "<- Back to dashboard";
+            btnCancel.Location = new Point(492, 94);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(469, 34);
+            btnCancel.TabIndex = 40;
+            btnCancel.Text = "Cancel booking";
+            btnCancel.UseVisualStyleBackColor = true;
             // 
             // View
             // 
@@ -338,18 +303,14 @@
             BackgroundImage = Properties.Resources.d9c3a45d_0958_4e44_bf30_c2b2dffd7ab4;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1143, 750);
+            Controls.Add(pictureBox1);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox1);
             Name = "View";
             Text = "View";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            Load += View_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -358,38 +319,32 @@
             panel3.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
         private Panel panel1;
         private Label label2;
         private Panel panel2;
         private Label label3;
         private Panel panel3;
         private Panel panel4;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
+        private Label lblEmail;
+        private Label lblPhone;
+        private Label lblAddress;
+        private Label lblName;
         private Label label8;
         private Label label9;
-        private Label label14;
-        private Label label13;
-        private Label label12;
-        private Label label11;
+        private Label lblPrice;
+        private Label lblDate;
+        private Label lblInstructions;
+        private Label lblService;
         private Label label10;
-        private Panel panel5;
-        private PictureBox pictureBox2;
-        private Panel panel6;
-        private Label label15;
         private LinkLabel linkLabel1;
+        private PictureBox pictureBox1;
+        private Label lblTime;
+        private Button btnCancel;
+        private ComboBox comboStatus;
     }
 }

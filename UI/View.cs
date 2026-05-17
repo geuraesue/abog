@@ -17,7 +17,9 @@ namespace abog.UI
             InitializeComponent();
         }
 
-        private void label14_Click(object sender, EventArgs e)
+        
+
+        private void View_Load(object sender, EventArgs e)
         {
 
         }
