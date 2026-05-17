@@ -36,8 +36,7 @@ namespace abog.UI
 
             MessageBox.Show($"Welcome {admin.firstName}");
             HomepageAdmin hAdmin = new HomepageAdmin();
-            hAdmin.Show();
-            this.Hide();
+            Main_Form.LoadForm(hAdmin);
 
 
         }
